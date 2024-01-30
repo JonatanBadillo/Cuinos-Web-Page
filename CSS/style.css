@@ -19,7 +19,7 @@ html{
 body {
     font-size: 16px; /* 1rem = 10px*/
     /* Hacer efecto degradado en toda la pagina*/
-    background-image: linear-gradient(to top, #DFE9F3 0%, #FFFFFF 100% );
+    background-image: linear-gradient(to top, #DFE9F3 0%, #000000 100% );
 }
 
 /* Tipografia de los titulos*/
@@ -91,6 +91,7 @@ h3{
     background-image:url(../SRC/img/team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     height: 500px;
     position: relative;
     margin-bottom: rem;
