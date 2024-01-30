@@ -83,7 +83,7 @@ h3{
 }
 
 .nav-bg{
-    background-color: #0097A7;
+    background-color: #000000;
 }
 
 
@@ -198,9 +198,7 @@ h3{
     font-weight: 700; /* Poner en negritas el titulo del formulario */
 }
 
-.contenedor_campo{
-    
-}
+
 
 .campo{
     margin-bottom: 1rem;
