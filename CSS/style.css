@@ -51,6 +51,14 @@ h3{
 
 }
 
+.logo-cuinos{
+    width: 100px; /* Ancho del logo */
+            height: auto; /* Altura ajustada automáticamente */
+            display: inline-block; /* Para que el logo se muestre en línea con otros elementos del menú */
+            margin-right: 10px; /* Espacio entre el logo y otros elementos del menú */
+            /* Otros estilos, como color, tamaño de fuente, etc. */
+}
+
 .titulo span{
     font-size: 2rem;
 }
