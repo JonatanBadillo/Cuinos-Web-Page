@@ -88,12 +88,12 @@ h3{
 
 
 .bar{
-    background-image:url(../SRC/img/hero.jpg);
+    background-image:url(../SRC/img/team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 410px;
+    height: 500px;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: rem;
 }
 
 .contenido-bar{
