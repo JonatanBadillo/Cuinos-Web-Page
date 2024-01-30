@@ -1,7 +1,7 @@
 :root{
     --Blanco: #FFFFFF;
     --Oscuro: #212121;
-    --Amarillo: #FFC107;
+    --Amarillo: #f561bf;
     --Azul: #0097A7;
     --Gris: #757575;
 }
@@ -19,7 +19,7 @@ html{
 body {
     font-size: 16px; /* 1rem = 10px*/
     /* Hacer efecto degradado en toda la pagina*/
-    background-image: linear-gradient(to top, #DFE9F3 0%, #000000 100% );
+    background-image: linear-gradient(to top, #DFE9F3 0%, #FFFFFF 100% );
 }
 
 /* Tipografia de los titulos*/
@@ -71,7 +71,7 @@ h3{
 }
 
 .navegacion-principal a:hover{
-    background-color: #FFC107;   
+    background-color: #f561bf;   
 }
 
 .contenedor{
@@ -157,7 +157,7 @@ h3{
 .servicio_Individual .iconos{
     height: 15rem;
     width: 15rem;
-    background-color: #FFC107;
+    background-color: #f561bf;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -190,7 +190,7 @@ h3{
 }
 
 .formulario legend {
-    color: #FFC107;
+    color: #f561bf;
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase; /* Poner en mayusculas el titulo */
