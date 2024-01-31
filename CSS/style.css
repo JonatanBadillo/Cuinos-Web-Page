@@ -52,7 +52,7 @@ h3{
 }
 
 .logo-cuinos {
-    width: 100px;
+    width: 7rem;
     height: auto;
     display: inline-block;
     /* margin-right: 10px; */ /* Elimina o comenta esta línea para evitar el margen derecho */
@@ -60,8 +60,9 @@ h3{
 
 /* Añadimos la siguiente regla para centrar el logo en su contenedor */
 .logo-cuinos img {
+    max-width: 100%;
     height: auto;
-    margin: 5 auto;
+    margin: 0 auto;
 }
 
 
@@ -70,15 +71,15 @@ h3{
 }
 
 .navegacion-principal{
-   display: flex; /* Para que la barra sea horizontal */
+   height: 100px;
+    display: flex; /* Para que la barra sea horizontal */
    flex-direction: column; /* Para se pueda mostrar de manera vertical las opciones */
-   height: 100px; 
 }
 
 .navegacion-principal a{
     color: #FFFFFF;
     text-decoration: NONE;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     padding: 3.2rem;
     display: block;
@@ -141,7 +142,7 @@ h3{
 }
 
 .boton{
-    background-color: #0097A7;
+    background-color: #f561bf;
     color: #FFFFFF;
     padding: 1rem 3rem 1rem 3rem;
     margin-top: 1rem;
@@ -158,7 +159,7 @@ h3{
 /* Se pone el cursor de la mano encima del boton enviar del formulario*/
 .boton:hover{
     cursor: pointer;
-    background-color: #f561bf; 
+    background-color: #000000; 
 }
 
 /* Alinear iconos con su figura*/
@@ -282,10 +283,15 @@ h3{
 /* Responsive */
 @media (min-width: 768px) {
     .navegacion-principal {
-        flex-direction: row;
-        justify-content: space-between;
+        height: auto; /* Ajustar la altura automáticamente en dispositivos más pequeños */
+        flex-direction: column; /* Cambiar a disposición de columna en dispositivos más pequeños */
+        align-items: center; /* Centrar elementos verticalmente */
     }
 
+    .navegacion-principal a {
+        padding: 1.5rem; /* Reducir el relleno de los elementos de navegación en dispositivos más pequeños */
+        font-size: 1.6rem; /* Reducir el tamaño del texto de los elementos de navegación en dispositivos más pequeños */
+    }
     .servicios {
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
@@ -293,18 +299,17 @@ h3{
     }
 
     .logo-cuinos {
-        height: auto;
-        display: inline-block;
-        /* margin-right: 10px; */ /* Elimina o comenta esta línea para evitar el margen derecho */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     /* Añadimos la siguiente regla para centrar el logo en su contenedor */
     .logo-cuinos img {
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
+        max-width: 100%; /* Aseguramos que el logo no se desborde del contenedor */
+        height: auto; /* Mantenemos la proporción del logo */
+        margin: 0 auto; /* Centrar horizontalmente */
     }
-    
 }
 
 
