@@ -51,69 +51,6 @@ h3{
 
 }
 
-.logo-cuinos {
-    width: 7rem;
-    height: auto;
-    display: inline-block;
-    /* margin-right: 10px; */ /* Elimina o comenta esta línea para evitar el margen derecho */
-}
-
-/* Añadimos la siguiente regla para centrar el logo en su contenedor */
-.logo-cuinos img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-
-.titulo span{
-    font-size: 2rem;
-}
-
-.navegacion-principal{
-    height: 10rem;
-    display: flex; /* Para que la barra sea horizontal */
-    flex-direction: column; /* Para se pueda mostrar de manera vertical las opciones */
-}
-
-.navegacion-principal a{
-    color: #FFFFFF;
-    text-decoration: NONE;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 3.2rem;
-    display: block;
-    text-align: center;
-}
-
-.navegacion-principal a:hover{
-    background-color: #f561bf;   
-}
-
-.contenedor{
-    max-width: 120rem;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto; 
-}
-
-.contenedor2{
-    max-width: 125rem;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto; 
-}
-
-.centrar1{
-   margin-top: 2rem;
-}
-
-.nav-bg{
-    background-color: #000000;
-}
-
 
 .bar{
     background-image:url(../SRC/img/team3.jpg);
@@ -165,121 +102,67 @@ h3{
     cursor: pointer;
     background-color: #000000; 
 }
-
-/* Alinear iconos con su figura*/
-.servicio_Individual {
+/*/////////////////////////////////////////////////////////////////////////*/
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999; /* Asegura que la barra de navegación esté por encima del contenido */
 }
 
-.servicio_Individual h3{
-    color: #000000;
+.logo img {
+    max-width: 100px;
 }
 
-.servicio_Individual p{
-    line-height: 2;
-    text-align: center;
-}
-
-/* Alinear iconos dentro de la figura*/
-.servicio_Individual .iconos{
-    height: 15rem;
-    width: 15rem;
-    background-color: #f561bf;
-    border-radius: 50%;
+.nav-links {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.formulario {
-    background-color: #757575;
-    width: min(60rem, 100%);
-    margin: 0 auto; /* Centrar formulario facil*/
-    padding: 2rem; /* Margen hacia adentro*/
-    border-radius: 1rem;
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.formulario fieldset {
-    border: none;
+.nav-links li a:hover {
+    color: #ff9900;
 }
 
-.formulario legend {
-    color: #f561bf;
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase; /* Poner en mayusculas el titulo */
-    margin-bottom: 2rem;
-    font-weight: 700; /* Poner en negritas el titulo del formulario */
+/* Estilos de las secciones */
+.seccion {
+    width: 80%; /* Ancho máximo de las secciones */
+    margin: 50px auto; /* Centra las secciones */
 }
 
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
 
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.campo{
-    margin-bottom: 1rem;
+    .logo {
+        margin-bottom: 20px;
+    }
 
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
-
-.campo label{
-    color: #DFE9F3;
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
-
-
-/* Poder editar cada input de manera individual*/
-.campo input[type="text"] {
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.campo input[type="tel"] {
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.campo input[type="email"] {
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.campo textarea {
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-    height: 20rem;
-}
-
-.enviar_form .boton{ 
-    width: 100%;
-}
-
-.centrarf{
-    text-align: center;
-}
-
 
 
 
@@ -315,6 +198,9 @@ h3{
         margin: 0 auto; /* Centrar horizontalmente */
     }
 }
+
+
+
 
 
 
