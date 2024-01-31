@@ -71,9 +71,9 @@ h3{
 }
 
 .navegacion-principal{
-   height: 100px;
+    height: 10rem;
     display: flex; /* Para que la barra sea horizontal */
-   flex-direction: column; /* Para se pueda mostrar de manera vertical las opciones */
+    flex-direction: column; /* Para se pueda mostrar de manera vertical las opciones */
 }
 
 .navegacion-principal a{
@@ -99,7 +99,7 @@ h3{
 }
 
 .contenedor2{
-    max-width: 120rem;
+    max-width: 125rem;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -283,12 +283,12 @@ h3{
 /* Responsive */
 @media (min-width: 768px) {
     .navegacion-principal {
-        height: auto; /* Ajustar la altura automáticamente en dispositivos más pequeños */
-        flex-direction: column; /* Cambiar a disposición de columna en dispositivos más pequeños */
-        align-items: center; /* Centrar elementos verticalmente */
+        /* Ajustar la altura automáticamente en dispositivos más pequeños */
+        flex-direction: row ;/* Cambiar a disposición de columna en dispositivos más pequeños */
+        justify-content: space-between;  /* Centrar elementos verticalmente */
     }
 
-    .navegacion-principal a {
+    .navegacion-principal a {   
         padding: 1.5rem; /* Reducir el relleno de los elementos de navegación en dispositivos más pequeños */
         font-size: 1.6rem; /* Reducir el tamaño del texto de los elementos de navegación en dispositivos más pequeños */
     }
