@@ -109,7 +109,7 @@ h3{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.6); /* Transparencia de la imagen*/
+    background-color: rgba(0,0,0,.7); /* Transparencia de la imagen*/
     /* ALINEAR VERTICALEMNTE LOS OBJETOS DE LA IMAGEN*/
     display: flex;
     flex-direction: column;
