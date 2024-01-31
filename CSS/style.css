@@ -52,7 +52,7 @@ h3{
 }
 
 .logo-cuinos{
-    width: 50px; /* Ancho del logo */
+    width: 7rem; /* Ancho del logo */
             height: auto; /* Altura ajustada automáticamente */
             display: inline-block; /* Para que el logo se muestre en línea con otros elementos del menú */
             margin-right: 10px; /* Espacio entre el logo y otros elementos del menú */
@@ -73,7 +73,7 @@ h3{
     text-decoration: NONE;
     font-size: 2rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 2rem;
     display: block;
     text-align: center;
 }
@@ -83,7 +83,7 @@ h3{
 }
 
 .contenedor{
-    max-width: 120rem;
+    max-width: 170rem;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -96,13 +96,13 @@ h3{
 
 
 .bar{
-    background-image:url(../SRC/img/team.jpg);
+    background-image:url(../SRC/img/team3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     height: 500px;
     position: relative;
-    margin-bottom: rem;
+    margin-bottom: 3rem;
 }
 
 .contenido-bar{
