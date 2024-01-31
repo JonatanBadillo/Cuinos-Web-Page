@@ -57,6 +57,9 @@ h3{
             display: inline-block; /* Para que el logo se muestre en línea con otros elementos del menú */
             margin-right: 10px; /* Espacio entre el logo y otros elementos del menú */
             /* Otros estilos, como color, tamaño de fuente, etc. */
+
+
+
 }
 
 .titulo span{
@@ -83,7 +86,15 @@ h3{
 }
 
 .contenedor{
-    max-width: 170rem;
+    max-width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; 
+}
+
+.contenedor2{
+    max-width: 120rem;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
