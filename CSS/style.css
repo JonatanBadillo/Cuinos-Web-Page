@@ -19,7 +19,7 @@ html{
 body {
     font-size: 16px; /* 1rem = 10px*/
     /* Hacer efecto degradado en toda la pagina*/
-    background-image: linear-gradient(to top, #DFE9F3 0%, #FFFFFF 100% );
+    background-image: linear-gradient(to top, #121313 0%, #797575 100% );
 }
 
 /* Tipografia de los titulos*/
@@ -45,7 +45,7 @@ h3{
     -webkit-box-shadow: 2px 7px 18px 0px rgba(112,112,112,0.71);
     -moz-box-shadow: 2px 7px 18px 0px rgba(112,112,112,0.71);
     box-shadow: 2px 7px 18px 0px rgba(112,112,112,0.71);
-    background-color: #FFFFFF;
+    background-color: #cccaca;
     padding: 2rem;
     border-radius: 1rem;
 
@@ -143,6 +143,7 @@ h3{
 /* Se pone el cursor de la mano encima del boton enviar del formulario*/
 .boton:hover{
     cursor: pointer;
+    background-color: #f561bf; 
 }
 
 /* Alinear iconos con su figura*/
@@ -153,7 +154,7 @@ h3{
 }
 
 .servicio_Individual h3{
-    color: #0097A7;
+    color: #19cce0;
 }
 
 .servicio_Individual p{
