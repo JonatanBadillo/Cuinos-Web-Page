@@ -39,8 +39,20 @@ nav {
     letter-spacing: 2px;
 }
 
+.container-logo h2:hover {
+    color: #E41F7B;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
 .container-logo h2 span {
     color: #E41F7B;
+    font-weight: 700;
+}
+
+.container-logo h2 span:hover {
+    color: #FF8BA0;
     font-weight: 700;
 }
 
