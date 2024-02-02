@@ -194,6 +194,47 @@ nav {
     background-image: url(/SRC/img/bg2.jpg);
 }
 
+.card:nth-of-type(5) .img__back{
+    background-image: url(/SRC/img/bg1.jpg);
+}
+
+.card:nth-of-type(6) .img__back{
+    background-image: url(/SRC/img/bg1.jpg);
+}
+
+.card:nth-of-type(7) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+.card:nth-of-type(8) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+
+.card:nth-of-type(9) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+
+.card:nth-of-type(10) .img__back{
+    background-image: url(/SRC/img/bg1.jpg);
+}
+
+.card:nth-of-type(11) .img__back{
+    background-image: url(/SRC/img/bg1.jpg);
+}
+
+.card:nth-of-type(12) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+.card:nth-of-type(13) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+
+.card:nth-of-type(14) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+.card:nth-of-type(15) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+
 .card:hover .img__back{
     bottom: -40px;
 }
