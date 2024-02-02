@@ -1,3 +1,4 @@
+/* https://colorhunt.co/palette/00000086003ce41f7bff8ba0 */
 * {
     margin: 0;
     padding: 0;
@@ -32,14 +33,14 @@ nav {
 }
 
 .container-logo h2 {
-    color: #95bdd8;
+    color: #FF8BA0;
     font-weight: 300;
     font-size: 35px;
     letter-spacing: 2px;
 }
 
 .container-logo h2 span {
-    color: #0590ec;
+    color: #86003C;
     font-weight: 700;
 }
 
@@ -49,7 +50,7 @@ nav {
 
 .links .link a {
     text-decoration: none;
-    color: #d1faf4;
+    color: #FF8BA0;
     font-size: 20px;
     margin: 0 25px;
     letter-spacing: 3px;
@@ -57,7 +58,7 @@ nav {
 }
 
 .links .link a:hover {
-    color: #487abb;
+    color: #E41F7B;
 }
 
 .toggle {
