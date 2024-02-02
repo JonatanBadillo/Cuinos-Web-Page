@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #86003C;
+    background: #FF8BA0;
     overflow: hidden;
 }
 
@@ -25,6 +25,7 @@ nav {
     line-height: 80px;
     z-index: 100;
 }
+/*---------------------- NAV BAR --------------------------*/
 
 .container-logo {
     margin-left: 20px;
@@ -74,7 +75,7 @@ nav {
 }
 
 .toggle {
-    color: #d1faf4;
+    color: #FF8BA0;
     margin-right: 20px;
     font-size: 30px;
     transform: rotate(90deg);
