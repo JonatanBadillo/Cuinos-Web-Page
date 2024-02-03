@@ -7,28 +7,33 @@
         <link rel="icon" href="SRC/img/logo.png" type="image/png">
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/styles.css">
-        
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     </head>
 <body>
-    <nav>
-        <div class="container">
-            <!--<img src="/SRC/img/logo.png" class="logo-imagen"> -->
-            <div class="container-logo">
-                <h2><span>Cuinos</span>FC<span>.</span></h2>
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+                <img src="SRC/img/logo.png" alt="">
+            </div>
+            <div class="container__nav">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#" class="select">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">HOW IT WORK</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+
+                
+                <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+
             </div>
 
-            <ul class="links ">
-                <li class="link"><a href="#">Acerca de</a></li>
-                <li class="link"><a href="#">Jugadores</a></li>
-                <li class="link"><a href="#">Imagenes</a></li>
-                <li class="link"><a href="#">Contacto</a></li>
-            </ul>
-
-            <div class="toggle">
-                |||
-            </div>
         </div>
-    </nav>
+    </header>
+
+
     <h1 style="text-align: center;">Jugadores</h1>
     <div class="container__cards">
         
@@ -214,6 +219,49 @@
         </div>
 
     </div>
+
+    <Footer>
+        <div class="container__footer">
+
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="Images/logo-magtimus.png" alt="">
+                </div>
+                <div class="terms">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="#">App Desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acercda de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>Cuinos FC</b></p>
+        </div>
+    </Footer>
     
 
     <script src="main.js"></script>
