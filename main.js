@@ -50,30 +50,6 @@ function sortTable(column, sort_asc) {
         .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
 }
 
-// 3. Converting HTML table to PDF
-
-const pdf_btn = document.querySelector('#toPDF');
-const customers_table = document.querySelector('#customers_table');
-
-
-const toPDF = function (customers_table) {
-    const html_code = `
-    <!DOCTYPE html>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <main class="table" id="customers_table">${customers_table.innerHTML}</main>`;
-
-    const new_window = window.open();
-     new_window.document.write(html_code);
-
-    setTimeout(() => {
-        new_window.print();
-        new_window.close();
-    }, 400);
-}
-
-pdf_btn.onclick = () => {
-    toPDF(customers_table);
-}
 
 
 
