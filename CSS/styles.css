@@ -413,12 +413,12 @@ tbody tr.hide td img {
     text-align: center;
 }
 
-.status.delivered {
+.status.active {
     background-color: #86e49d;
     color: #006b21;
 }
 
-.status.cancelled {
+.status.inactive {
     background-color: #d893a3;
     color: #b30021;
 }
