@@ -200,6 +200,34 @@ body{
     z-index: 10;
 }
 
+@keyframes modal{
+    from{
+        transform: translateY(50vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+
+}
+
+.icon-x{
+    fill: rgb(54, 54, 54);
+}
+
 
 /*-----------------------FOOTER------------------------------*/
 
