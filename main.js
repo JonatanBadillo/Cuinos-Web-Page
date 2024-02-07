@@ -111,4 +111,6 @@ const closeWindow = ()=>{
     }, 1000)
 }
 
-closeButton.addEventListener('click',()=>closeWindow())
+closeButton.addEventListener('click',()=>closeWindow());
+
+window.addEventListener('click',e => e.target == windowBackground && closeWindow());
