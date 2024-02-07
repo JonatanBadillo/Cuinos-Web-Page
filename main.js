@@ -95,22 +95,38 @@ window.onresize = function(event) {
 };
 
 //////////////////////////////////////////////////
-const windowBackground = document.getElementById('window-background');
-const windowContainer = document.getElementById('window-container');
-const openButton = document.getElementById('open-button');
-const closeButton = document.getElementById('close-button');
+// Seleccionar todos los botones "Leer Más" por su clase
+const openButtons = document.querySelectorAll('.open-button');
 
-openButton.addEventListener('click',()=>windowBackground.style.display='flex');
+// Añadir un evento de clic a cada botón "Leer Más"
+openButtons.forEach(openButton => {
+    openButton.addEventListener('click', () => {
+        // Seleccionar la ventana emergente correspondiente a este botón
+        const windowBackground = openButton.parentElement.querySelector('.window-background');
+        
+        // Mostrar la ventana emergente
+        windowBackground.style.display = 'flex';
+    });
+});
 
-const closeWindow = ()=>{
-    windowContainer.classList.add('close')
+// Seleccionar todos los botones "Cerrar" por su clase
+const closeButtons = document.querySelectorAll('.close-button');
 
-    setTimeout(()=>{
-        windowContainer.classList.remove('close')
-        windowBackground.style.display = 'none'
-    }, 1000)
-}
+// Añadir un evento de clic a cada botón "Cerrar"
+closeButtons.forEach(closeButton => {
+    closeButton.addEventListener('click', () => {
+        // Seleccionar el contenedor de la ventana emergente
+        const windowBackground = closeButton.closest('.window-background');
+        
+        // Ocultar la ventana emergente
+        windowBackground.style.display = 'none';
+    });
+});
 
-closeButton.addEventListener('click',()=>closeWindow());
-
-window.addEventListener('click',e => e.target == windowBackground && closeWindow());
+// Añadir un evento de clic al fondo de la ventana emergente para cerrarla
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('window-background')) {
+        // Ocultar la ventana emergente
+        e.target.style.display = 'none';
+    }
+});
