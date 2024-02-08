@@ -30,12 +30,12 @@ body{
     position: relative;
 }
 
-.banner__icon-player{
+.banner__icon-ball{
     width: 35%;
     height: 100%;
 }
 
-#icon_player{
+#icon_ball{
     width: 400px;
     margin-top: -20px;
     position: relative;
@@ -68,14 +68,14 @@ body{
     color: #69F1A1;
 }
 
-.banner__icon-ball{
+.banner__icon-player{
     height: 100%;
     position: absolute;
     right: 10px;
     overflow: hidden;
 }
 
-#icon_ball{
+#icon_player{
     width: 300px;
     position: relative;
     margin-top: -100px;
@@ -137,11 +137,11 @@ body{
         font-size: 22px;
     }
 
-    #icon_player{
+    #icon_ball{
         left: -60px;
     }
 
-    .banner__icon-ball{
+    .banner__icon-player{
         right: -20px;
     }
 }
@@ -161,11 +161,11 @@ body{
         flex-wrap: wrap;
     }
 
-    #icon_ball{
+    #icon_player{
         display: none;
     }
 
-    #icon_player{
+    #icon_ball{
         left: 0;
     }
 
