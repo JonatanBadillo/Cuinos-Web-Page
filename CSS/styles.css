@@ -18,6 +18,8 @@ body{
 
 
 /*-----------------------container banner ------------------------------*/
+
+
 .container__banner{
     margin-top: 80px;
 }
@@ -78,7 +80,7 @@ body{
 #icon_player{
     width: 300px;
     position: relative;
-    margin-top: -100px;
+    margin-top: -70px;
     opacity: 0.6;
 }
 
@@ -174,7 +176,6 @@ body{
         margin-top: -100px;
     }
 }
-
 
 
 /*--------------------- CARDS ------------------------------*/
