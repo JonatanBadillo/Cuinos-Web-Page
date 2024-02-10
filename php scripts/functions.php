@@ -1,10 +1,4 @@
 <?php
-function splitter($urls, $divisor)
-{
-    $strings_array = array();
-    $strings_array = explode($divisor, $urls);
-    return $strings_array; // Usar como $data = split_urls($cadena_con_urls); (Validar con length)
-}
 function get_last_insert_id($connection)
 {
     return $connection->insert_id;
@@ -78,4 +72,20 @@ function fetch_fields($table, $fields, $id, $custom_query)
         $connection->close();
         return null;
     }
+}
+function contains_string($main_string, $substring)
+{
+    // strpos devuelve la posición donde se encuentra la subcadena
+    // Si no se encuentra, devuelve false
+    return strpos($main_string, $substring) !== false;
+}
+function splitter($urls, $splitter)
+{
+    if (contains_string($urls, $splitter)) {
+        $img_urls = array();
+        $img_urls = explode($splitter, $urls);
+    } else {
+        $img_urls = [$urls];
+    }
+    return $img_urls; // Usar como $data = split_urls($cadena_con_urls); (Validar con length)
 }

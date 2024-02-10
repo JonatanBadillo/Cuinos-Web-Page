@@ -47,361 +47,50 @@
     <!-- CARDS -->
 
     <div class="container__cards">
-        <div class="card" id="player1">
-            <div class="cover">
-                <img src="/SRC/img/player1.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Juan Carlos Cote</h2>
-                <p><b>Portero</b><br><b>Torneos:</b> 2 <br> <b>Títulos:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player2">
-            <div class="cover">
-                <img src="/SRC/img/player2.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Abraham Robleda</h2>
-                <p><b>Portero</b><br><b>Torneos:</b> 2 <br> <b>Títulos:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 2</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card" id="player3">
-            <div class="cover">
-                <img src="/SRC/img/player3.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Jonatan Badillo</h2>
-                <p><b>Defensa</b><br><b>Torneos:</b> 4 <br> <b>Goles:</b> 5</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player4">
-            <div class="cover">
-                <img src="/SRC/img/player4.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Olaf Baez</h2>
-                <p><b>Defensa</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 4</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player5">
-            <div class="cover">
-                <img src="/SRC/img/player5.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Diego Cordova</h2>
-                <p><b>Defensa</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 5</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player6">
-            <div class="cover">
-                <img src="/SRC/img/player6.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Carlos Rodriguez</h2>
-                <p><b>Defensa/Medio</b><br><b>Torneos:</b> 2 <br> <b>Titulos:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player7">
-            <div class="cover">
-                <img src="/SRC/img/player7.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Adrian Balle</h2>
-                <p><b>Medio</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 12</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player8">
-            <div class="cover">
-                <img src="/SRC/img/player8.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Josue Jimenez</h2>
-                <p><b>Medio</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 5</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player9">
-            <div class="cover">
-                <img src="/SRC/img/player9.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Jesus Posadas</h2>
-                <p><b>Medio</b><br><b>Torneos:</b> 3 <br> <b>Goles:</b> 22</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player10">
-            <div class="cover">
-                <img src="/SRC/img/player10.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Santiago Robles</h2>
-                <p><b>Medio</b><br><b>Torneos:</b> 4 <br> <b>Goles:</b> 17</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player11">
-            <div class="cover">
-                <img src="/SRC/img/player11.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Quique</h2>
-                <p><b>Medio</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 40</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player12">
-            <div class="cover">
-                <img src="/SRC/img/player12.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Eduardo Rodriguez</h2>
-                <p><b>Defensa/Medio</b><br><b>Torneos:</b> 2 <br> <b>Titulos:</b> 1</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player13">
-            <div class="cover">
-                <img src="/SRC/img/player13.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Angel Garcia</h2>
-                <p><b>Delantero</b><br><b>Torneos:</b> 4 <br> <b>Goles:</b> 15</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <?php
+        include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
+
         $dynamicDOM = '<div class="card" id="playerFLAG">
-        <div class="cover">
-            <img src="/SRC/img/playerFLAG.png" alt="">
-            <div class="img__back"></div>
-        </div>
-        <div class="description">
-            <h2>FLAG FLAG FLAG</h2>
-            <p><b>FLAG</b><br><b>Torneos:</b> FLAG <br> <b>Goles:</b> FLAG</p>
-            <input type="button" value="Leer Más" class="open-button">
-            <div class="window-background">
-                <div class="window-container">
-                    <button class="close-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                            <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                        </svg>
-                    </button>
-                    <h1>hola 3</h1>
-                </div>
-            </div>
-        </div>
-    </div>';
+                           <div class="cover">
+                               <img src="/SRC/img/playerFLAG.png" alt="">
+                               <div class="img__back"></div>
+                           </div>
+                           <div class="description">
+                               <h2>FLAG FLAG FLAG</h2>
+                               <p><b>POSITION</b><br><b>Torneos:</b> FLAG <br> <b>Goles:</b> FLAG</p>
+                               <input type="button" value="Leer Más" class="open-button">
+                               <div class="window-background">
+                                   <div class="window-container">
+                                       <button class="close-button">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
+                                               <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+                                           </svg>
+                                       </button>
+                                       <h1>hola 3</h1>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>';
+        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
+        $players = fetch_fields("players", $fields, null, null);
+
+        $fields = ["id_position", "name_position"];
+        $positions = fetch_fields("positions", $fields, null, null);
+        $indexes = [0, 0, 1, 2, 3, 7, 6];
+        for ($i = 0; $i < sizeof($players); $i++) {
+            $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+            $playerPositions = splitter($players[$i][5], ",");
+            (sizeof($playerPositions) == 1) ? flag_replacer($playerDOM, "POSITION", [$positions[$playerPositions[0]]], [0]) : $textPositions = true;
+            if ($textPositions) {
+                $textPositions = "";
+                for ($j = 0; $j < sizeof($playerPositions); $j++) {
+                    $textPositions .= $positions[$playerPositions[$j]];
+                }
+            }
+            echo ($playerDOM);
+        }
         ?>
-
-        <div class="card" id="player14">
-            <div class="cover">
-                <img src="/SRC/img/player14.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Santiago Cordova</h2>
-                <p><b>Delantero</b><br><b>Torneos:</b> 2 <br> <b>Goles:</b> 11</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="player15">
-            <div class="cover">
-                <img src="/SRC/img/player15.png" alt="">
-                <div class="img__back"></div>
-            </div>
-            <div class="description">
-                <h2>Manuel Reyes</h2>
-                <p><b>Delantero</b><br><b>Torneos:</b> 4 <br> <b>Goles:</b> 25</p>
-                <input type="button" value="Leer Más" class="open-button">
-                <div class="window-background">
-                    <div class="window-container">
-                        <button class="close-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                            </svg>
-                        </button>
-                        <h1>hola 3</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <br>
 
