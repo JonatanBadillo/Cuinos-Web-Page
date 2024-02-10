@@ -341,7 +341,7 @@
             <div class="img__back"></div>
         </div>
         <div class="description">
-            <h2>FLAG FLAG</h2>
+            <h2>FLAG FLAG FLAG</h2>
             <p><b>FLAG</b><br><b>Torneos:</b> FLAG <br> <b>Goles:</b> FLAG</p>
             <input type="button" value="Leer Más" class="open-button">
             <div class="window-background">
