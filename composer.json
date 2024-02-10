@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "tecnickcom/tcpdf": "^6.6",
+        "picqer/php-barcode-generator": "^2.4"
+    }
+}
