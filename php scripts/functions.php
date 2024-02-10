@@ -42,9 +42,7 @@ function fetch_fields($table, $fields, $id, $custom_query)
 {
     include_once "connection.php";
     session_start();
-    if (($_SESSION['email'] == "demo_user@system.com") or ($_SESSION['user'] == "demo_user")) {
-        $connection = new mysqli("localhost", "comercial_demo", $data[1], ($table . "_demo"));
-    }
+    (($_SESSION['email'] == "demo_user@system.com") or ($_SESSION['user'] == "demo_user")) ? $connection = new mysqli("localhost", "comercial_demo", $data[1], ($table . "_demo")):(false);
     if ($custom_query != "" && $custom_query != null) {
         $query = $custom_query;
     } else {
