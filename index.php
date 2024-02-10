@@ -83,7 +83,7 @@
             $playerPositions = splitter($players[$i][5], ",");
             (sizeof($playerPositions) == 1) ? flag_replacer($playerDOM, "POSITION", [$positions[$playerPositions[0]]], [0]) : $textPositions = true;
             if (isset($textPositions)) {
-                error_reporting(0);
+                error_reporting(1);
                 if ($textPositions) {
                     $textPositions = "";
                     for ($j = 0; $j < sizeof($playerPositions); $j++) {
