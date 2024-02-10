@@ -86,7 +86,7 @@
                 if ($textPositions) {
                     $textPositions = "";
                     for ($j = 0; $j < sizeof($playerPositions); $j++) {
-                        $textPositions .= $positions[$playerPositions[$j]];
+                        ($j = 0) ? $textPositions .= strval($positions[$playerPositions[$j]]) : $textPositions .= (" / " . strval($positions[$playerPositions[$j]]));
                     }
                     $playerDOM = flag_replacer($playerDOM, "POSITION", [$textPositions], [0]);
                 }
