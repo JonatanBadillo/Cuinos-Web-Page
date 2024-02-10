@@ -28,13 +28,13 @@ $mail->CharSet = "UTF-8";
 // Aquí termina configuración
 
 // Aquí empieza código para enviar (comentado para que la configuración se pueda importar en otros códigos, y envíe cosas de forma dinámica)
-/*
+
 $mail->ClearAllRecipients();
 $mail->AddAddress("dantecc10@gmail.com");
 $mail->AddAddress("jonatanbadillo.19@gmail.com");
 $mail->AddCC("dante@castelancarpinteyro.com");
 $mail->IsHTML(true);  // Podemos activar o desactivar HTML en el mensaje
-$mail->Subject = 'Prueba de envío de correo desde Cuinos.';
+$mail->Subject = 'Ya no dice pruebas.';
 
 $msg = ("<h1>Envío exitoso</h1>
             <p>Si este mensaje es visible, la configuración de correo en subdominio para Cuinos fue exitosa.</p>
@@ -50,4 +50,3 @@ try {
     echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
     echo "Excepción lanzada: " . $e->getMessage();
 }
-*/
