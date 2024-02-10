@@ -19,8 +19,7 @@ function flag_replacer($text, $flag, $data_array, $indexes_array)
 {
     $chars = strlen($flag); // Longitud de la "flag" que se ha de reemplazar
     $n = substr_count($text, $flag);  // Número de veces que aparece la "flag" en el texto
-    if ($n == sizeof($indexes_array)) {
-        // Las apariciones de la "flag" en la cadena son las mismas que la longitud del arreglo de índices
+    if ($n == sizeof($indexes_array)) { // Las apariciones de la "flag" en la cadena son las mismas que la longitud del arreglo de índices
         for ($i = 0; $i < $n; $i++) {
             $position = strpos($text, $flag);
             $text = substr_replace($text, $data_array[$indexes_array[$i]], $position, $chars);
@@ -30,14 +29,14 @@ function flag_replacer($text, $flag, $data_array, $indexes_array)
         return null;
     }
 }
-    // Datos de ejemplo
-    /*
-    $txt = "Hola, mi nombre es FLAG, y vivo en FLAG. Tengo FLAG años y estudio en FLAG.";
-    $datos = ["Dante", "Puebla", 18, "BUAP"];
-    $indexes = [0, 1, 2, 3];
-    $flag = "FLAG";
-    echo (flag_replacer($txt, $flag, $datos, $indexes));
-    */
+// Datos de ejemplo
+/*
+$txt = "Hola, mi nombre es FLAG, y vivo en FLAG. Tengo FLAG años y estudio en FLAG.";
+$datos = ["Dante", "Puebla", 18, "BUAP"];
+$indexes = [0, 1, 2, 3];
+$flag = "FLAG";
+echo (flag_replacer($txt, $flag, $datos, $indexes));
+*/
 function fetch_fields($table, $fields, $id, $custom_query)
 {
     include_once "connection.php";
