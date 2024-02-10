@@ -5,9 +5,9 @@ use PHPMAILER\PHPMailer\PHPMailer;
 use PHPMAILER\PHPMailer\Exception;
 use PHPMAILER\PHPMailer\SMTP;
 
-require_once('../vendor/phpmailer/phpmailer/src/PHPMailer.php');
-require_once('../vendor/phpmailer/phpmailer/src/SMTP.php');
-require_once('../vendor/phpmailer/phpmailer/src/Exception.php');
+require_once('vendor/phpmailer/phpmailer/src/PHPMailer.php');
+require_once('vendor/phpmailer/phpmailer/src/SMTP.php');
+require_once('vendor/phpmailer/phpmailer/src/Exception.php');
 
 $username = "pruebas@cuinos.castelancarpinteyro.com";
 $password = "CuinosMailSender24!!";
