@@ -9,3 +9,9 @@ function get_last_insert_id($connection)
 {
     return $connection->insert_id;
 }
+function logout($redirect_url)
+{
+    session_start();
+    session_destroy();
+    (isset($redirect_url)) ? header("Location: ../" . $redirect_url) : header("Location: ../index.html");
+}
