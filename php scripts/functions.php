@@ -29,6 +29,7 @@ function flag_replacer($text, $flag, $data_array, $indexes_array)
     } else {
         return null;
     }
+}
     // Datos de ejemplo
     /*
     $txt = "Hola, mi nombre es FLAG, y vivo en FLAG. Tengo FLAG años y estudio en FLAG.";
@@ -37,7 +38,6 @@ function flag_replacer($text, $flag, $data_array, $indexes_array)
     $flag = "FLAG";
     echo (flag_replacer($txt, $flag, $datos, $indexes));
     */
-}
 function fetch_fields($table, $fields, $id, $custom_query)
 {
     include_once "connection.php";
