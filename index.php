@@ -83,11 +83,11 @@
             $playerPositions = splitter($players[$i][5], ",");
             (sizeof($playerPositions) == 1) ? flag_replacer($playerDOM, "POSITION", [$positions[$playerPositions[0]]], [0]) : $textPositions = true;
             if (isset($textPositions)) {
+                error_reporting(0);
                 if ($textPositions) {
                     $textPositions = "";
                     for ($j = 0; $j < sizeof($playerPositions); $j++) {
                         ($j = 0) ? $textPositions .= strval($positions[$playerPositions[$j]]) : $textPositions .= (" / " . strval($positions[$playerPositions[$j]]));
-                        error_clear_last();
                     }
                     $playerDOM = substr_replace($playerDOM, "POSITION", $textPositions);
                 }
