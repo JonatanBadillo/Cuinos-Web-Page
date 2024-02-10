@@ -88,6 +88,7 @@
                     for ($j = 0; $j < sizeof($playerPositions); $j++) {
                         $textPositions .= $positions[$playerPositions[$j]];
                     }
+                    $playerDOM = flag_replacer($playerDOM, "POSITIONS", [$textPositions], [0]);
                 }
             }
             echo ($playerDOM);
