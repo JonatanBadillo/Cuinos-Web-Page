@@ -89,3 +89,7 @@ function splitter($urls, $splitter)
     }
     return $img_urls; // Usar como $data = split_urls($cadena_con_urls); (Validar con length)
 }
+function positions_proccesor($string_index, $strings_array)
+{
+    return ((intval($string_index) >= 0) && (intval($string_index) < sizeof($strings_array))) ? ($strings_array[intval($string_index)]) : null;
+}

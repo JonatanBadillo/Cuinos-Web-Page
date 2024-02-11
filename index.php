@@ -81,8 +81,13 @@
         for ($i = 0; $i < sizeof($players); $i++) {
             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
             $playerPositions = splitter($players[$i][5], ",");
-            print_r($playerPositions);
-            
+            // print_r($playerPositions);
+            $text_positions = "";
+            $k = 0;
+            foreach ($playerPositions as $positionIndex) {
+                ($k == 0) ? $text_positions .= positions_proccesor($playerPositions, $positions) : $text_positions .= (" / " . positions_proccesor($playerPositions, $positions));
+            }
+
             echo ($playerDOM);
         }
         ?>
