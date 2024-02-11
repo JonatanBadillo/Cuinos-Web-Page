@@ -55,7 +55,7 @@
                                <b>Goles:</b> FLAG <br>
                                <b>Títulos:</b> FLAG
                                </p>
-                               <input type="button" value="Leer Más" class="open-button">
+                               <input type="button" value="Leer más" class="open-button">
                                <div class="window-background">
                                    <div class="window-container">
                                        <button class="close-button">
