@@ -76,7 +76,11 @@
         $players = fetch_fields("players", $fields, null, null);
 
         $fields = ["name_position"];
-        $positions = fetch_fields("positions", $fields, null, null);
+        $positions_fetch = fetch_fields("positions", $fields, null, null);
+        $n = sizeof($positions_fetch);
+        for ($i = 0; $i < $n; $i++) {
+            ($i == 0) ? $positions = [] : array_push($positions, $positions_fetch[$i][0]);
+        }
         print_r($positions);
         $indexes = [0, 0, 1, 2, 3, 7, 6];
         for ($i = 0; $i < sizeof($players); $i++) {
