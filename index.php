@@ -39,10 +39,11 @@
 
     <!-- CARDS -->
     <div class="container__cards">
-
         <?php
+        // Aquí inicia código para generar tarjetas de los jugadores
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
-
+        
+        // Puedes modificar el HTML de esta variable para generar cambios estructurales
         $dynamicDOM = '<div class="card" id="playerFLAG">
                            <div class="cover">
                                <img src="/SRC/img/playerFLAG.png" alt="">
@@ -64,7 +65,7 @@
                                            </svg>
                                        </button>
                                        <h1>hola 3</h1>
-                                   </div>
+                                       </div>
                                </div>
                            </div>
                        </div>';
@@ -90,9 +91,10 @@
                 $k++;
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-
+            
             echo ($playerDOM);
         }
+        // Aquí termina código para generar tarjetas de los jugadores
         ?>
     </div>
     <br>
