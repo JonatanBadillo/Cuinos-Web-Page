@@ -85,7 +85,7 @@
         for ($i = 0; $i < $n; $i++) {
             ($i == 0) ? $positions = ["", $positions_fetch[$i][1]] : array_push($positions, $positions_fetch[$i][1]);
         }
-        print_r($positions);
+        //print_r($positions);
         $indexes = [0, 0, 1, 2, 3, 7, 6, 8];
         for ($i = 0; $i < sizeof($players); $i++) {
             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
