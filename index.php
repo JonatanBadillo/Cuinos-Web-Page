@@ -58,7 +58,11 @@
                            </div>
                            <div class="description">
                                <h2>FLAG FLAG FLAG</h2>
-                               <p><b>POSITION</b><br><b>Torneos:</b> FLAG <br> <b>Goles:</b> FLAG</p>
+                               <p><b>POSITION</b><br>
+                               <b>Torneos:</b> FLAG <br> 
+                               <b>Goles:</b> FLAG <br>
+                               <b>Títulos:</b> FLAG
+                               </p>
                                <input type="button" value="Leer Más" class="open-button">
                                <div class="window-background">
                                    <div class="window-container">
@@ -82,7 +86,7 @@
             ($i == 0) ? $positions = ["", $positions_fetch[$i][1]] : array_push($positions, $positions_fetch[$i][1]);
         }
         print_r($positions);
-        $indexes = [0, 0, 1, 2, 3, 7, 6];
+        $indexes = [0, 0, 1, 2, 3, 7, 6, 8];
         for ($i = 0; $i < sizeof($players); $i++) {
             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
             $playerPositions = splitter($players[$i][5], ",");
