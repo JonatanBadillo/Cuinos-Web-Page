@@ -63,4 +63,6 @@ if (isset($_POST['email'])) {
         echo "Excepción lanzada: " . $e->getMessage();
     }
     header("Location: ../index.php");
+}else{
+    header("Location: ../index.php?error=failed-register");
 }
