@@ -97,7 +97,9 @@ function positions_proccesor($string_index, $strings_array)
 $array1 = ["0", "1", "2", "4"];
 $array2 = ["Portero", "Defensa", "Medio", "Delantero"];
 $text_positions = "";
+$k = 0;
 foreach ($array1 as $positionIndex) {
     ($k == 0) ? $text_positions .= positions_proccesor($array1, $array2) : $text_positions .= (" / " . positions_proccesor($array1, $array2));
+    $k++;
 }
-echo($text_positions);
+echo ($text_positions);
