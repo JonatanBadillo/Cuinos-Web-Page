@@ -75,7 +75,7 @@
         $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
         $players = fetch_fields("players", $fields, null, null);
 
-        $fields = ["id_position", "name_position"];
+        $fields = ["name_position"];
         $positions = fetch_fields("positions", $fields, null, null);
         $indexes = [0, 0, 1, 2, 3, 7, 6];
         for ($i = 0; $i < sizeof($players); $i++) {
