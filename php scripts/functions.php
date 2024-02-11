@@ -93,13 +93,3 @@ function positions_proccesor($string_index, $strings_array)
 {
     return ((intval($string_index) >= 0) && (intval($string_index) < sizeof($strings_array))) ? ($strings_array[intval($string_index)]) : "";
 }
-
-$array1 = ["0", "1", "2", "3"];
-$array2 = ["Portero", "Defensa", "Medio", "Delantero"];
-$text_positions = "";
-$k = 0;
-foreach ($array1 as $positionIndex) {
-    ($k == 0) ? $text_positions .= positions_proccesor($$positionIndex, $array2) : $text_positions .= (" / " . positions_proccesor($positionIndex, $array2));
-    $k++;
-}
-echo ($text_positions);

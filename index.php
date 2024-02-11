@@ -85,8 +85,10 @@
             $text_positions = "";
             $k = 0;
             foreach ($playerPositions as $positionIndex) {
-                ($k == 0) ? $text_positions .= positions_proccesor($playerPositions, $positions) : $text_positions .= (" / " . positions_proccesor($playerPositions, $positions));
+                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
+                $k++;
             }
+            $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
 
             echo ($playerDOM);
         }
