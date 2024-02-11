@@ -28,12 +28,9 @@ if (isset($_POST['email'])) {
                 <li>Posición(es): " . $insert_data[5] . "</li>
             </ul>
             ");
-    //
     $mail->Body = $msg;
-    //
     try {
         $mail->Send();
-        // Resto del código...
         //echo ("Correo enviado 'con éxito'");
     } catch (Exception $e) {
         echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
@@ -57,12 +54,9 @@ if (isset($_POST['email'])) {
                 <li>Posición(es): " . $insert_data[5] . "</li>
             </ul>
             ");
-    //
     $mail->Body = $msg;
-    //
     try {
         $mail->Send();
-        // Resto del código...
         //echo ("Correo enviado 'con éxito'");
     } catch (Exception $e) {
         echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
