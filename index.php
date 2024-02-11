@@ -81,18 +81,8 @@
         for ($i = 0; $i < sizeof($players); $i++) {
             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
             $playerPositions = splitter($players[$i][5], ",");
-
-            echo ("Obtuvimos eso: " . $playerPositions[$i][1] . " / " . $positions[$playerPositions[$i][1]]);
-            (sizeof($playerPositions) == 1) ? str_replace("POSITION", $positions[intval($playerPositions[$i][1])], $playerDOM) : $textPositions = true;
-            if (isset($textPositions)) {
-                if ($textPositions) {
-                    $textPositions = "";
-                    for ($j = 0; $j < sizeof($playerPositions); $j++) {
-                        ($j == 0) ? $textPositions .= strval($positions[$playerPositions[$j]]) : $textPositions .= (" / " . strval($positions[$playerPositions[$j]]));
-                    }
-                    $playerDOM = str_replace($textPositions, "POSITION", $playerDOM);
-                }
-            }
+            print_r($playerPositions);
+            
             echo ($playerDOM);
         }
         ?>
