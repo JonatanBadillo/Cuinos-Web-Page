@@ -76,7 +76,7 @@
         $players = fetch_fields("players", $fields, null, null);
 
         $fields = ["name_position"];
-        $positions = fetch_fields("positions", $fields, null, null);
+        $positions = fetch_fields("positions", $fields, null, null)[0];
         $indexes = [0, 0, 1, 2, 3, 7, 6];
         for ($i = 0; $i < sizeof($players); $i++) {
             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
