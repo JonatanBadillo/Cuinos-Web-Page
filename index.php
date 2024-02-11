@@ -467,7 +467,7 @@
             <hr>
             <p>Todos los derechos reservados © 2024 <b>Cuinos FC</b></p>
         </div>
-    </Footer>
+    </footer>
     <script src="main.js"></script>
 </body>
 
