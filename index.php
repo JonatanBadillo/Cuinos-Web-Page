@@ -12,20 +12,14 @@
 </head>
 
 <body>
-
-
     <header>
-
         <!-- FALTA MENU-->
         <!--
             Añadí un h1 en el container del banner, por cuestiones de calidad
             y SEO, pero si creas una barra de navegación, lo quitas de ahí y lo pones aquí -idealmente-.
         -->
         <!--TODO: NAV BAR -->
-
     </header>
-
-
     <!-----------container banner---------------->
     <div class="container__banner">
         <div class="banner">
@@ -43,9 +37,7 @@
         </div>
     </div>
 
-
     <!-- CARDS -->
-
     <div class="container__cards">
 
         <?php
@@ -475,10 +467,7 @@
             <hr>
             <p>Todos los derechos reservados © 2024 <b>Cuinos FC</b></p>
         </div>
-    </Footer>
-
-
-
+    </footer>
     <script src="main.js"></script>
 </body>
 
