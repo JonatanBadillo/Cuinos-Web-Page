@@ -99,7 +99,7 @@ $array2 = ["Portero", "Defensa", "Medio", "Delantero"];
 $text_positions = "";
 $k = 0;
 foreach ($array1 as $positionIndex) {
-    ($k == 0) ? $text_positions .= positions_proccesor($array1, $array2) : $text_positions .= (" / " . positions_proccesor($array1, $array2));
+    ($k == 0) ? $text_positions .= positions_proccesor($$positionIndex, $array2) : $text_positions .= (" / " . positions_proccesor($positionIndex, $array2));
     $k++;
 }
 echo ($text_positions);
