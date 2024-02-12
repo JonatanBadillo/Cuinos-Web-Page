@@ -153,3 +153,22 @@ window.onscroll = function () {
     elemento1.style.bottom = posicion * 0.1 + "px";
     elemento2.style.top = posicion * 0.1 + "px";
 }
+
+///////////////////////////form//////////////////////////////////////////////
+const form = document.querySelector("form"),
+        nextBtn = form.querySelector(".nextBtn"),
+        backBtn = form.querySelector(".backBtn"),
+        allInput = form.querySelectorAll(".first input");
+
+
+nextBtn.addEventListener("click", ()=> {
+    allInput.forEach(input => {
+        if(input.value != ""){
+            form.classList.add('secActive');
+        }else{
+            form.classList.remove('secActive');
+        }
+    })
+})
+
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));
