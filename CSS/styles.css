@@ -772,13 +772,13 @@ thead th.active,tbody td.active {
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-.container-form header{
+.container-form h1{
     position: relative;
     font-size: 20px;
     font-weight: 600;
     color: #333;
 }
-.container-form header::before{
+.container-form h1::before{
     content: "";
     position: absolute;
     left: 0;
