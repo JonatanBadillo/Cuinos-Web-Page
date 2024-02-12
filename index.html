@@ -33,10 +33,10 @@
             <nav>
                 <ul>
                     <li><a href="#">Conócenos</a></li>
-                    <li><a href="#">Jugadores</a></li>
-                    <li><a href="#">Goleadores</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#players">Jugadores</a></li>
+                    <li><a href="#table">Goleadores</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact-info">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,9 +54,9 @@
           <img src="SRC/img/player_banner.png" id="icon_player" alt="" />
         </div>
         <div class="banner__text">
-          <h1>Cuinos FC</h1>
+          <h1 style="color: white;">Cuinos FC</h1>
           <h2>
-            Cuinos FC: donde el fútbol se convierte en una pasión compartida por
+            Donde el fútbol se convierte en una pasión compartida por
             todos.
           </h2>
           <a href="https://www.instagram.com/cuinos.fc/" target="_blank"
@@ -68,7 +68,7 @@
 
     <!-- CARDS -->
 
-    <div class="container__cards">
+    <div class="container__cards" id="players">
       <div class="card" id="player1">
         <div class="cover">
           <img src="/SRC/img/player1.png" alt="" />
@@ -570,7 +570,7 @@
 
     <center>
       <main class="table" id="customers_table">
-        <section class="table__header">
+        <section class="table__header" id="table">
           <h1>Goleadores Historicos</h1>
           <div class="input-group">
             <input type="search" placeholder="Search Data..." />
@@ -782,7 +782,7 @@
     <br />
 
     <!--------------- SLIDERS --------------------->
-    <div class="slider">
+    <div class="slider" id="gallery">
       <div class="list">
         <div class="item">
           <img src="SRC/img/sliders-team/slider-1.jpg" alt="" />
@@ -904,7 +904,7 @@
     <br/>
     <!------------------FORM----------------------->
     <center>
-        <div class="wrapper">
+        <div class="wrapper" id="contact-info">
             <header>Contactanos</header>
             <form action="#">
               <div class="dbl-field">
