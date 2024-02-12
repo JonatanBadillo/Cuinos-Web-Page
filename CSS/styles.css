@@ -36,7 +36,11 @@ header {
   }
   
   .logo img {
-    width: 180px;
+    width: 80px;
+  }
+  .logo img:hover {
+    width: 90px;
+    cursor: pointer;
   }
   
   .menu nav ul {
