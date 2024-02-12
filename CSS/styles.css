@@ -59,23 +59,7 @@ header {
     opacity: 0.6;
   }
   
-  .btn__header-cerrar,
-  .btn__register-cover {
-    padding: 14px 50px;
-    border: none;
-    background: #000;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background, color, 300ms;
-  }
   
-  .btn__header-cerrar:hover,
-  .btn__register-cover:hover {
-    background: #69f1a1;
-    color: #000;
-  }
   
   #icon_menu {
     display: none;
