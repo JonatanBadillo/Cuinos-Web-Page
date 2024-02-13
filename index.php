@@ -155,6 +155,7 @@
                                 $k++;
                             }
                             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
+                            ($players[$i][6] == '0') ? $playerDOM = str_replace("STATUS", "Activo", $playerDOM) : $playerDOM = str_replace("STATUS", "Inactivo", $playerDOM);
 
                             echo ($playerDOM);
                         }
