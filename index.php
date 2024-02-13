@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuinos FC</title>
@@ -14,12 +15,9 @@
     <link rel="stylesheet" href="CSS/styles-form.css" />
     <link rel="stylesheet" href="CSS/styles-cards.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script
-      src="https://kit.fontawesome.com/41bcea2ae3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
     <header>
@@ -150,6 +148,12 @@
                         for ($i = 0; $i < sizeof($players); $i++) {
                             $dom = flag_replacer($dom, "FLAG", $players[$i], $indexes);
                             $text_positions = "";
+                            $fields = ["id_position", "name_position"];
+                            $positions_fetch = fetch_fields("positions", $fields, null, null);
+                            $n = sizeof($positions_fetch);
+                            for ($i = 0; $i < $n; $i++) {
+                                ($i == 0) ? $positions = ["", $positions_fetch[$i][1]] : array_push($positions, $positions_fetch[$i][1]);
+                            }
                             $k = 0;
                             foreach ($playerPositions as $positionIndex) {
                                 ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
@@ -171,191 +175,6 @@
                         </tr>
     -->
 
-                        <tr>
-                            <td> 1 </td>
-                            <td><a href="#player11"> Quique </a></td>
-                            <td> 2 </td>
-                            <td> 40 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 2 </td>
-                            <td><a href="#player15"> Manuel Reyes </a></td>
-                            <td> 4 </td>
-                            <td> 25 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 3 </td>
-                            <td><a href="#player9"> Jesus Posadas </a></td>
-                            <td> 3 </td>
-                            <td> 22 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 4 </td>
-                            <td><a href="#player10"> Santiago Robles </a></td>
-                            <td> 4 </td>
-                            <td> 17 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 5 </td>
-                            <td>Jimmy</td>
-                            <td> 2 </td>
-                            <td> 17 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 6 </td>
-                            <td><a href="#player13"> Angel Garcia </a></td>
-                            <td> 4 </td>
-                            <td> 15 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 7 </td>
-                            <td><a href="#player7"> Adrian Balle </a></td>
-                            <td> 2 </td>
-                            <td> 12 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 8 </td>
-                            <td><a href="#player14"> Santiago Cordova </a></td>
-                            <td> 2 </td>
-                            <td> 11 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 9 </td>
-                            <td>Zizar</td>
-                            <td> 1 </td>
-                            <td> 9 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 10 </td>
-                            <td>Hugo</td>
-                            <td> 1 </td>
-                            <td> 7 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 11 </td>
-                            <td>Irving</td>
-                            <td> 2 </td>
-                            <td> 6 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 12 </td>
-                            <td>Ricardo</td>
-                            <td> 3 </td>
-                            <td> 6 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 13 </td>
-                            <td><a href="#player8"> Josue Jimenez </a></td>
-                            <td> 2 </td>
-                            <td> 5 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 14 </td>
-                            <td><a href="#player3"> Jonatan Badillo </a></td>
-                            <td> 4 </td>
-                            <td> 5 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 15 </td>
-                            <td>Leo Olivarez</td>
-                            <td> 2 </td>
-                            <td> 4 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 16 </td>
-                            <td>Johan</td>
-                            <td> 2 </td>
-                            <td> 3 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 17 </td>
-                            <td>Galina</td>
-                            <td> 2 </td>
-                            <td> 3 </td>
-                            <td>
-                                <p class="status inactive">Inactivo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 18 </td>
-                            <td><a href="#player5"> Diego Cordova</a></td>
-                            <td> 2 </td>
-                            <td> 1 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> 19 </td>
-                            <td><a href="#player4"> Olaf Baez</a></td>
-                            <td> 2 </td>
-                            <td> 1 </td>
-                            <td>
-                                <p class="status active">Activo</p>
-                            </td>
-                        </tr>
 
                     </tbody>
                 </table>
