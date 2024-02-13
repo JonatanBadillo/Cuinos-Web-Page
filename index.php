@@ -134,7 +134,7 @@
                         <?php
                         $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
                         $players = fetch_fields("players", $fields, null, null);
-                        $dom = '<tr>
+                        $dom = ('<tr>
                             <td> 1 </td>
                             <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
                             <td> FLAG </td>
@@ -143,7 +143,7 @@
                             <td>
                                 <p class="status inactive">STATUS</p>
                             </td>
-                        </tr>';
+                        </tr>');
                         $indexes = [0, 1, 2, 3, 7, 6];
                         for ($i = 0; $i < sizeof($players); $i++) {
                             $dom = flag_replacer($dom, "FLAG", $players[$i], $indexes);
@@ -155,6 +155,7 @@
                                 ($i == 0) ? $positions = ["", $positions_fetch[$i][1]] : array_push($positions, $positions_fetch[$i][1]);
                             }
                             $k = 0;
+                            $playerPositions = splitter($players[$i][5], ",");
                             foreach ($playerPositions as $positionIndex) {
                                 ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
                                 $k++;
@@ -163,19 +164,6 @@
                             echo ($dom);
                         }
                         ?>
-                        <!--
-                    <tr>
-                            <td> 1 </td>
-                            <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
-                            <td> FLAG </td>
-                            <td> FLAG </td>
-                            <td>
-                                <p class="status inactive">STATUS</p>
-                            </td>
-                        </tr>
-    -->
-
-
                     </tbody>
                 </table>
             </section>
