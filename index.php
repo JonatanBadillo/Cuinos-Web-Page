@@ -127,6 +127,7 @@
                             <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Torneos <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Goles <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Posición(es) <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Estatus <span class="icon-arrow">&UpArrow;</span></th>
                         </tr>
                     </thead>
