@@ -140,7 +140,7 @@
                             <td> FLAG </td>
                             <td> POSITION </td>
                             <td>
-                                <p class="status inactive">STATUS</p>
+                                <p class="status STATUS</p>
                             </td>
                         </tr>');
                         $indexes = [0, 1, 2, 3, 7, 6];
@@ -155,7 +155,7 @@
                                 $k++;
                             }
                             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-                            ($players[$i][6] == '0') ? $playerDOM = str_replace("STATUS", "Activo", $playerDOM) : $playerDOM = str_replace("STATUS", "Inactivo", $playerDOM);
+                            ($players[$i][6] == '0') ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
 
                             echo ($playerDOM);
                         }
