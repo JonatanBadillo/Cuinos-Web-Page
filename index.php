@@ -157,7 +157,7 @@
                                 $k++;
                             }
                             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-                            ($players[$i][6] == '0') ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
+                            (intval($players[$i][6]) === 0) ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
 
                             echo ($playerDOM);
                         }
