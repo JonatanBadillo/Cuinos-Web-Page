@@ -133,7 +133,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $$dynamicDOM = ('<tr>
+                        $dynamicDOM = ('<tr>
                             <td> 1 </td>
                             <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
                             <td> FLAG </td>
