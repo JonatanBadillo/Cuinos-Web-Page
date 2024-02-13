@@ -291,7 +291,7 @@
 
 
     <!----------------- FOOTER ----------------------->
-    <Footer>
+    <footer>
         <div class="container__footer">
 
             <div class="box__footer">
