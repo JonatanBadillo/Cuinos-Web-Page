@@ -42,7 +42,7 @@
         <?php
         // Aquí inicia código para generar tarjetas de los jugadores
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
-        
+
         // Puedes modificar el HTML de esta variable para generar cambios estructurales
         $dynamicDOM = '<div class="card" id="playerFLAG">
                            <div class="cover">
@@ -91,7 +91,7 @@
                 $k++;
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-            
+
             echo ($playerDOM);
         }
         // Aquí termina código para generar tarjetas de los jugadores
@@ -123,6 +123,44 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
+                        $players = fetch_fields("players", $fields, null, null);
+                        $dom = '<tr>
+                            <td> 1 </td>
+                            <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
+                            <td> FLAG </td>
+                            <td> FLAG </td>
+                            <td> POSITIONS </td>
+                            <td>
+                                <p class="status inactive">STATUS</p>
+                            </td>
+                        </tr>';
+                        $indexes = [0, 1, 2, 3, 7, 6];
+                        for ($i = 0; $i < sizeof($players); $i++) {
+                            $dom = flag_replacer($dom, "FLAG", $players[$i], $indexes);
+                            $text_positions = "";
+                            $k = 0;
+                            foreach ($playerPositions as $positionIndex) {
+                                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
+                                $k++;
+                            }
+                            $dom = str_replace("POSITION", $text_positions, $dom);
+                            echo ($dom);
+                        }
+                        ?>
+                        <!--
+                    <tr>
+                            <td> 1 </td>
+                            <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
+                            <td> FLAG </td>
+                            <td> FLAG </td>
+                            <td>
+                                <p class="status inactive">STATUS</p>
+                            </td>
+                        </tr>
+    -->
+
                         <tr>
                             <td> 1 </td>
                             <td><a href="#player11"> Quique </a></td>
@@ -132,6 +170,7 @@
                                 <p class="status inactive">Inactivo</p>
                             </td>
                         </tr>
+
                         <tr>
                             <td> 2 </td>
                             <td><a href="#player15"> Manuel Reyes </a></td>
