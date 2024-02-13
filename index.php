@@ -136,7 +136,7 @@
                         $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
                         $players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_player` DESC");
                         $dynamicDOM = ('<tr>
-                            <td> 1 </td>
+                            <td> ORDER </td>
                             <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
                             <td> FLAG </td>
                             <td> FLAG </td>
@@ -157,6 +157,7 @@
                                 $k++;
                             }
                             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
+                            $playerDOM = str_replace("ORDER", ($i+1), $playerDOM);
                             (intval($players[$i][9]) === 1) ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
 
                             echo ($playerDOM);
