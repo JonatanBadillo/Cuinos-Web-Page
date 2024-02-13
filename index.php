@@ -145,6 +145,7 @@
                                 <p class="status inactive">STATUS</p>
                             </td>
                         </tr>');
+                        print_r($players);
                         $indexes = [0, 1, 2, 3, 7, 6];
                         for ($i = 0; $i < sizeof($players); $i++) {
                             $dom = flag_replacer($dom, "FLAG", $players[$i], $indexes);
