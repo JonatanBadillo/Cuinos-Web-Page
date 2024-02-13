@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuinos FC</title>
-    <link rel="icon" href="SRC/img/logo.png" type="image/png">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="icon" href="SRC/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles-menu.css" />
+    <link rel="stylesheet" href="CSS/styles-gallery.css" />
+    <link rel="stylesheet" href="CSS/styles-banner.css" />
+    <link rel="stylesheet" href="CSS/styles-footer.css" />
+    <link rel="stylesheet" href="CSS/styles-players.css" />
+    <link rel="stylesheet" href="CSS/styles-form.css" />
+    <link rel="stylesheet" href="CSS/styles-cards.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
 <body>
     <header>
@@ -124,7 +134,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        /*$fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
+                        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
                         $players = fetch_fields("players", $fields, null, null);
                         $dom = '<tr>
                             <td> 1 </td>
@@ -147,7 +157,7 @@
                             }
                             $dom = str_replace("POSITION", $text_positions, $dom);
                             echo ($dom);
-                        }*/
+                        }
                         ?>
                         <!--
                     <tr>
@@ -509,7 +519,13 @@
             <p>Todos los derechos reservados © 2024 <b>Cuinos FC</b></p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="/SRC/js/main.js"></script>
+    <script src="/SRC/js/table.js"></script>
+    <script src="/SRC/js/form.js"></script>
+    <script src="/SRC/js/banner.js"></script>
+    <script src="/SRC/js/sliders.js"></script>
+    <script src="/SRC/js/main.js"></script>
+
 </body>
 
 </html>
