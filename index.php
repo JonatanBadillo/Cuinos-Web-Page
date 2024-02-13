@@ -147,20 +147,6 @@
                         $indexes = [0, 1, 2, 3, 7, 6];
                         for ($i = 0; $i < sizeof($players); $i++) {
                             $dom = flag_replacer($dom, "FLAG", $players[$i], $indexes);
-                            $text_positions = "";
-                            $fields = ["id_position", "name_position"];
-                            $positions_fetch = fetch_fields("positions", $fields, null, null);
-                            $n = sizeof($positions_fetch);
-                            for ($i = 0; $i < $n; $i++) {
-                                ($i == 0) ? $positions = ["", $positions_fetch[$i][1]] : array_push($positions, $positions_fetch[$i][1]);
-                            }
-                            $k = 0;
-                            $playerPositions = splitter($players[$i][5], ",");
-                            foreach ($playerPositions as $positionIndex) {
-                                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
-                                $k++;
-                            }
-                            $dom = str_replace("POSITION", $text_positions, $dom);
                             echo ($dom);
                         }
                         ?>
