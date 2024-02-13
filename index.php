@@ -124,7 +124,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
+                        /*$fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
                         $players = fetch_fields("players", $fields, null, null);
                         $dom = '<tr>
                             <td> 1 </td>
@@ -147,7 +147,7 @@
                             }
                             $dom = str_replace("POSITION", $text_positions, $dom);
                             echo ($dom);
-                        }
+                        }*/
                         ?>
                         <!--
                     <tr>
