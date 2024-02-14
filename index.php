@@ -197,125 +197,124 @@
 
     <!--------------- SLIDERS --------------------->
     <div class="slider" id="gallery">
-        <div class="list">
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-1.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-2.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-3.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-4.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-5.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-6.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-7.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-8.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-9.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-10.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-11.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-12.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-13.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-14.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-15.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-16.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-17.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-18.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-19.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-20.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-21.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-22.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-23.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-24.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-25.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-26.jpg" alt="">
-            </div>
-            <div class="item">
-                <img src="SRC/img/sliders-team/slider-27.jpg" alt="">
-            </div>
-        </div>
-        <div class="buttons">
-            <button id="prev">
-                << /button>
-                    <button id="next">></button>
-        </div>
-        <ul class="dots">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <br />
+			<div class="list">
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-1.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-2.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-3.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-4.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-5.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-6.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-7.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-8.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-9.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-10.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-11.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-12.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-13.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-14.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-15.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-16.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-17.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-18.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-19.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-20.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-21.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-22.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-23.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-24.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-25.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-26.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="SRC/img/sliders-team/slider-27.jpg" alt="" />
+				</div>
+			</div>
+			<div class="buttons">
+				<button id="prev"><</button>
+				<button id="next">></button>
+			</div>
+			<ul class="dots">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+        
 		<!------------------FORM----------------------->
 		<center>
 			<div class="wrapper" id="contact-info">
