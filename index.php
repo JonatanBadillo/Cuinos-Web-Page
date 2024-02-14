@@ -196,7 +196,7 @@
     <br>
 
     <!--------------- SLIDERS --------------------->
-    <div class="slider">
+    <div class="slider" id="gallery">
         <div class="list">
             <div class="item">
                 <img src="SRC/img/sliders-team/slider-1.jpg" alt="">
