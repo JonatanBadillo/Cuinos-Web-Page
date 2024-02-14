@@ -52,20 +52,22 @@
     </header>
     <!-----------container banner---------------->
     <div class="container__banner">
-        <div class="banner">
-            <div class="banner__icon-ball">
-                <img src="SRC/img/ball.png" id="icon_ball" alt="">
-            </div>
-            <div class="banner__icon-player">
-                <img src="SRC/img/player_banner.png" id="icon_player" alt="">
-            </div>
-            <div class="banner__text">
-                <h1>Cuinos FC</h1>
-                <h2>Cuinos FC: donde el fútbol se convierte en una pasión compartida por todos.</h2>
-                <a href="https://www.instagram.com/cuinos.fc/" target="_blank">Contáctanos</a>
-            </div>
-        </div>
-    </div>
+			<div class="banner">
+				<div class="banner__icon-ball">
+					<img src="SRC/img/ball.png" id="icon_ball" alt="" />
+				</div>
+				<div class="banner__icon-player">
+					<img src="SRC/img/player_banner.png" id="icon_player" alt="" />
+				</div>
+				<div class="banner__text">
+					<h1 style="color: white">Cuinos FC</h1>
+					<h2>
+						Donde el fútbol se convierte en una pasión compartida por todos.
+					</h2>
+					<a href="#contact-info">Contáctanos</a>
+				</div>
+			</div>
+		</div>
 
     <!-- CARDS -->
     <div class="container__cards">
