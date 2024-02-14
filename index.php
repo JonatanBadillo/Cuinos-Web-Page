@@ -135,7 +135,7 @@
 
     <center>
         <main class="table" id="customers_table">
-            <section class="table__header">
+            <section class="table__header" id="table">
                 <h1>Goleadores Historicos</h1>
                 <div class="input-group">
                     <input type="search" placeholder="Search Data...">
