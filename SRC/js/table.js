@@ -48,6 +48,12 @@ function sortTable(column, sort_asc) {
         let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
             second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
 
+        // Convertir los valores de texto a números para ordenar correctamente
+        if (!isNaN(parseFloat(first_row))) {
+            first_row = parseFloat(first_row);
+            second_row = parseFloat(second_row);
+        }
+
         return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
     })
         .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
