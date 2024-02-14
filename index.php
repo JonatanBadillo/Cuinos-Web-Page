@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuinos FC</title>
-    <link rel="icon" href="SRC/img/logo.png" type="image/png" />
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/styles-menu.css" />
-    <link rel="stylesheet" href="CSS/styles-gallery.css" />
-    <link rel="stylesheet" href="CSS/styles-banner.css" />
-    <link rel="stylesheet" href="CSS/styles-footer.css" />
-    <link rel="stylesheet" href="CSS/styles-players.css" />
-    <link rel="stylesheet" href="CSS/styles-form.css" />
-    <link rel="stylesheet" href="CSS/styles-cards.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cuinos FC</title>
+		<link rel="icon" href="SRC/img/logo.png" type="image/png" />
+		<link rel="stylesheet" href="CSS/normalize.css" />
+		<link rel="stylesheet" href="CSS/styles-menu.css" />
+		<link rel="stylesheet" href="CSS/styles-gallery.css" />
+		<link rel="stylesheet" href="CSS/styles-banner.css" />
+		<link rel="stylesheet" href="CSS/styles-footer.css" />
+		<link rel="stylesheet" href="CSS/styles-players.css" />
+		<link rel="stylesheet" href="CSS/styles-form.css" />
+		<link rel="stylesheet" href="CSS/styles-cards.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/41bcea2ae3.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
 <body>
     <header>
@@ -314,7 +322,7 @@
 				<li></li>
 			</ul>
 		</div>
-        
+
 		<!------------------FORM----------------------->
 		<center>
 			<div class="wrapper" id="contact-info">
