@@ -315,6 +315,84 @@
             <li></li>
         </ul>
     </div>
+    <br />
+		<!------------------FORM----------------------->
+		<center>
+			<div class="wrapper" id="contact-info">
+				<header>Contactanos</header>
+				<form action="#">
+					<div class="dbl-field">
+						<div class="field">
+							<input
+								type="text"
+								name="name"
+								placeholder="Ingresa tu nombre completo"
+								required
+							/>
+							<i class="fas fa-user"></i>
+						</div>
+						<div class="field">
+							<input
+								type="text"
+								name="email"
+								placeholder="Ingresa tu correo electronico"
+								required
+							/>
+							<i class="fas fa-envelope"></i>
+						</div>
+					</div>
+					<div class="dbl-field">
+						<div class="field">
+							<input
+								type="text"
+								name="phone"
+								placeholder="Ingresa tu número de telefono"
+								required
+							/>
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div class="input-field">
+							<label>Selecciona tu posición</label>
+							<div class="checkboxes">
+								<label class="checkbox-label input-field">
+									<!-- Agregamos la clase input-field aquí -->
+									<input type="checkbox" name="posicion" value="Portero" />
+									<span>Portero</span>
+								</label>
+								<label class="checkbox-label input-field">
+									<!-- Agregamos la clase input-field aquí -->
+									<input type="checkbox" name="posicion" value="Defensa" />
+									<span>Defensa</span>
+								</label>
+								<label class="checkbox-label input-field">
+									<!-- Agregamos la clase input-field aquí -->
+									<input type="checkbox" name="posicion" value="Medio" />
+									<span>Medio</span>
+								</label>
+								<label class="checkbox-label input-field">
+									<!-- Agregamos la clase input-field aquí -->
+									<input type="checkbox" name="posicion" value="Delantero" />
+									<span>Delantero</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="message">
+						<textarea
+							placeholder="Write your message"
+							name="message"
+						></textarea>
+						<i class="material-icons"
+							>Escribe porque quieres ser parte de la familia de Cuinos</i
+						>
+					</div>
+					<div class="button-area">
+						<button type="submit">Enviar</button>
+						<span></span>
+					</div>
+				</form>
+			</div>
+		</center>
 
 
     <!----------------- FOOTER ----------------------->
