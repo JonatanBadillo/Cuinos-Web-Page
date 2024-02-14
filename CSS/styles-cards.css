@@ -109,6 +109,10 @@
     background-image: url(/SRC/img/bg1.jpg);
 }
 
+.card:nth-of-type(16) .img__back{
+    background-image: url(/SRC/img/bg2.jpg);
+}
+
 .card:hover .img__back{
     bottom: -40px;
 }
