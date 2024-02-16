@@ -39,7 +39,6 @@ header {
     width: 80px;
   }
   .logo img:hover {
-    width: 90px;
     cursor: pointer;
   }
   

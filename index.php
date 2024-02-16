@@ -421,7 +421,7 @@
                 <h2>Redes Sociales</h2>
                 <a href="https://www.instagram.com/cuinos.fc/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                 <a href="https://www.tiktok.com/@cuinos_fc" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-
+				<a href="https://www.facebook.com/profile.php?id=61556508205444&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Facebook</a
             </div>
         </div>
 
