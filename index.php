@@ -384,12 +384,9 @@
 					</div>
 					<div class="message">
 						<textarea
-							placeholder="Write your message"
-							name="message"
-						></textarea>
-						<i class="material-icons"
-							>Escribe porque quieres ser parte de la familia de Cuinos</i
-						>
+							placeholder="Escribe porque quieres ser parte de la familia de Cuinos"
+							name="message"></textarea>
+						<i class="material-icons"></i>
 					</div>
 					<div class="button-area">
 						<button type="submit">Enviar</button>
