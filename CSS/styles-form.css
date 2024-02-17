@@ -3,16 +3,13 @@
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
 }
 
 .contact-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
   gap: 20px;
-  height: 100%;
 }
 
 .contact-left-title h2{
@@ -20,4 +17,42 @@
   color: #a363aa;
   font-size: 40px;
   margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  color: #666;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.contact-left button{
+  display: flex;
 }
