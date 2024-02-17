@@ -46,7 +46,7 @@
 }
 
 .contact-inputs:focus{
-  border: 2px solid #ff994f;
+  border: 2px solid #bd43cb;
 }
 
 .contact-inputs::placeholder{
