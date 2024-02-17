@@ -72,6 +72,8 @@
 
 .contact-right img{
   width: 500px;
+  border: 2px solid #a363aa;
+  border-radius: 20px;
 }
 
 @media (max-width: 800px) {
