@@ -104,7 +104,8 @@
                                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
                                            </svg>
                                        </button>
-                                       <p>HOLA</p>
+									   <h1>NAME_DESCRIPTION</h1>
+                                       <p>FLAG_DESCRIPTION</p>
                                     </div>
                                </div>
                            </div>
@@ -131,7 +132,8 @@
                 $k++;
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-			$playerDOM = str_replace("HOLA", $players[$i][4] , $playerDOM);
+			$playerDOM = str_replace("NAME_DESCRIPTION", $players[$i][1] , $playerDOM);
+			$playerDOM = str_replace("FLAG_DESCRIPTION", $players[$i][4] , $playerDOM);
 
 
             echo ($playerDOM);
