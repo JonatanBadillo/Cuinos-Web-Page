@@ -105,8 +105,9 @@
                                            </svg>
                                        </button>
 									   <h1>NOMBRE APELLIDO</h1>
+									   <b>POSITION</b>
                                        <p style="text-align: justify;">TEXTO</p>
-									   <p><b>POSITION</b><br>
+									   <p>
 										<b>Torneos:</b> TORNEOS<br> 
 										<b>Goles:</b> GOLES <br>
 										<b>Títulos:</b> TITULOS
