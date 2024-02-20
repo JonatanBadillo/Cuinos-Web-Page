@@ -133,7 +133,7 @@
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
 			$playerDOM = str_replace("HOLA", $players[$i][4] , $playerDOM);
-			$playerDOM = str_replace("NOMBRE", $players[$i][4] , $playerDOM);
+			$playerDOM = str_replace("NOMBRE", $players[$i][2] , $playerDOM);
 
 
             echo ($playerDOM);
