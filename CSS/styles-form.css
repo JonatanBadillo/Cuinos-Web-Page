@@ -70,12 +70,22 @@
   height: 15px;
 }
 
-.contact-right img{
-  width: 500px;
+.contact-right img {
+  width: 300px; /* Ajusta el tamaño de la imagen según tu preferencia */
+  height: 300px; /* Asegúrate de que el alto sea igual al ancho para hacer la imagen circular */
   border: 2px solid #a363aa;
-  border-radius: 20px;
-  box-shadow: inset 0 0 10px #a363aa;
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área designada */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
 }
+
+/* Estilos al pasar el mouse */
+.contact-right img:hover {
+  transform: scale(1.05); /* Escala un poco más grande al pasar el mouse */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
 
 @media (max-width: 800px) {
   .contact-inputs{
