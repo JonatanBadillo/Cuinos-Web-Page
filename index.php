@@ -132,7 +132,7 @@
                 $k++;
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-			$playerDOM = str_replace("NOMBRE", $players[$i][4] , $playerDOM);
+			$playerDOM = str_replace("TEXTO", $players[$i][4] , $playerDOM);
 			$playerDOM = str_replace("NOMBRE",$players[$i][1] , $playerDOM);
 			$playerDOM = str_replace("APELLIDO",$players[$i][2] , $playerDOM);
 
