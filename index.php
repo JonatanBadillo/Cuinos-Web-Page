@@ -105,7 +105,7 @@
                                            </svg>
                                        </button>
 									   <h1>NOMBRE APELLIDO</h1>
-                                       <p style="text-align :justify;">TEXTO</p>
+                                       <p style="text-align: justify;">TEXTO</p>
                                     </div>
                                </div>
                            </div>
