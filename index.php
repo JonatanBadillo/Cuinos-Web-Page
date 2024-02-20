@@ -121,24 +121,21 @@
         //print_r($positions);
         $indexes = [0, 0, 1, 2, 3, 7, 6, 8];
         for ($i = 0; $i < sizeof($players); $i++) {
-			$playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
-			$playerPositions = splitter($players[$i][5], ",");
-			$text_positions = "";
-			$k = 0;
-			
-			foreach ($playerPositions as $positionIndex) {
-				($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
-				$k++;
-			}
-			
-			$playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-		
-			// Reemplazar "HOLA" con la descripción del jugador
-			$playerDOM = str_replace("<p>HOLA</p>", "<p>{$players[$i][4]}</p>", $playerDOM);
-		
-			echo ($playerDOM);
-		}
-		
+            $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+            $playerPositions = splitter($players[$i][5], ",");
+            // print_r($playerPositions);
+            $text_positions = "";
+            $k = 0;
+            foreach ($playerPositions as $positionIndex) {
+                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
+                $k++;
+            }
+            $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
+			$playerDOM = str_replace("HOLA", "<p>" . $players[$i][4] . "</p>", $playerDOM);
+
+
+            echo ($playerDOM);
+        }
         // Aquí termina código para generar tarjetas de los jugadores
         ?>
     </div>
