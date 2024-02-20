@@ -106,6 +106,11 @@
                                        </button>
 									   <h1>NOMBRE APELLIDO</h1>
                                        <p style="text-align: justify;">TEXTO</p>
+									   <p><b>POSITION</b><br>
+										<b>Torneos:</b> TORNEOS<br> 
+										<b>Goles:</b> GOLES <br>
+										<b>Títulos:</b> TITULOS
+									   </p>
                                     </div>
                                </div>
                            </div>
@@ -135,6 +140,9 @@
 			$playerDOM = str_replace("TEXTO", $players[$i][4] , $playerDOM);
 			$playerDOM = str_replace("NOMBRE",$players[$i][1] , $playerDOM);
 			$playerDOM = str_replace("APELLIDO",$players[$i][2] , $playerDOM);
+			$playerDOM = str_replace("GOLES", $players[$i][6] , $playerDOM);
+			$playerDOM = str_replace("TITULOS",$players[$i][7] , $playerDOM);
+			$playerDOM = str_replace("TORNEOS",$players[$i][8] , $playerDOM);
 
 
             echo ($playerDOM);
