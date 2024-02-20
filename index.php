@@ -142,8 +142,8 @@
 			$playerDOM = str_replace("NOMBRE",$players[$i][1] , $playerDOM);
 			$playerDOM = str_replace("APELLIDO",$players[$i][2] , $playerDOM);
 			$playerDOM = str_replace("GOLES", $players[$i][6] , $playerDOM);
-			$playerDOM = str_replace("TITULOS",$players[$i][7] , $playerDOM);
-			$playerDOM = str_replace("TORNEOS",$players[$i][8] , $playerDOM);
+			$playerDOM = str_replace("TITULOS",$players[$i][8] , $playerDOM);
+			$playerDOM = str_replace("TORNEOS",$players[$i][7] , $playerDOM);
 
 
             echo ($playerDOM);
