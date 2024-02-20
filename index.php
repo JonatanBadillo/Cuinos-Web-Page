@@ -131,7 +131,7 @@
                 $k++;
             }
             $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-			$playerDOM = str_replace("HOLA", "<p>" . $players[$i][4] . "</p>", $playerDOM);
+			$playerDOM = str_replace("HOLA", $players[$i][4] , $playerDOM);
 
 
             echo ($playerDOM);
