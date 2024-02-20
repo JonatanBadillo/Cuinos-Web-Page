@@ -104,8 +104,8 @@
                                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
                                            </svg>
                                        </button>
-                                       <p>HOLA</p>
-                                       </div>
+                                       <p>FLAG_DESCRIPTION</p>
+                                    </div>
                                </div>
                            </div>
                        </div>';
@@ -121,19 +121,24 @@
         //print_r($positions);
         $indexes = [0, 0, 1, 2, 3, 7, 6, 8];
         for ($i = 0; $i < sizeof($players); $i++) {
-            $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
-            $playerPositions = splitter($players[$i][5], ",");
-            // print_r($playerPositions);
-            $text_positions = "";
-            $k = 0;
-            foreach ($playerPositions as $positionIndex) {
-                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
-                $k++;
-            }
-            $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-
-            echo ($playerDOM);
-        }
+			$playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+			$playerPositions = splitter($players[$i][5], ",");
+			$text_positions = "";
+			$k = 0;
+			
+			foreach ($playerPositions as $positionIndex) {
+				($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
+				$k++;
+			}
+			
+			$playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
+		
+			// Reemplazar "HOLA" con la descripción del jugador
+			$playerDOM = str_replace("<p>FLAG_DESCRIPTION</p>", "<p>{$players[$i][4]}</p>", $playerDOM);
+		
+			echo ($playerDOM);
+		}
+		
         // Aquí termina código para generar tarjetas de los jugadores
         ?>
     </div>
