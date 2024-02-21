@@ -49,7 +49,7 @@
 <div class="container__header">
 
 <div class="logo">
-	<a href="../home.php"><img src="assets/images/Logos/logo-black.png" alt="Logo"></a>
+	<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>		
 </div>
 
 <div class="menu">
