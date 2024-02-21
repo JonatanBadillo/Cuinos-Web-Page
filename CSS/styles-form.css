@@ -86,6 +86,41 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
+.contact-checkbox-label {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #666;
+}
+
+.contact-checkbox {
+  display: none;
+}
+
+.contact-checkbox + .contact-checkbox-label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #bd43cb;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.contact-checkbox:checked + .contact-checkbox-label:before {
+  background-color: #bd43cb;
+}
+
+.contact-checkbox:checked + .contact-checkbox-label:after {
+  content: '\2713';
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+}
+
 
 @media (max-width: 800px) {
   .contact-inputs{
