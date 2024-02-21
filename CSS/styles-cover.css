@@ -4,8 +4,7 @@ home__container{
 }
 
 home__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
+    width: 270px;
+    filter: drop-shadow(var(--shadow-img));
+    justify-self: center;
 }
