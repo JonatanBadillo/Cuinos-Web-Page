@@ -224,33 +224,6 @@
     <div class="slider" id="gallery">
 			<div class="list">
 				<div class="item">
-					<img src="SRC/img/sliders-team/slider-1.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-2.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-3.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-4.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-5.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-6.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-7.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-8.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="SRC/img/sliders-team/slider-9.jpg" alt="" />
-				</div>
-				<div class="item">
 					<img src="SRC/img/sliders-team/slider-10.jpg" alt="" />
 				</div>
 				<div class="item">
@@ -311,15 +284,6 @@
 			</div>
 			<ul class="dots">
 				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
 				<li></li>
 				<li></li>
 				<li></li>
