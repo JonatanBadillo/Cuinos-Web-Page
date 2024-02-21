@@ -61,19 +61,7 @@
     </header>
 
 	<!-------------------PORTADA------------------->
-	<section class="home section" id="home">
-		<div class="home__container container grid">
-			<img src="SRC/img/sliders-team/slider-15.jpg" alt="" class="home__img">
-			<div class="home__data">
-				<h1 class="home__title">CUINOS FC</h1>
-				<p class="home__description">
-					Donde el fútbol se convierte en una pasión compartida por todos.
-				</p>
-			</div>
-
-		</div>
-
-	</section>
+	
 
     <!-----------container banner---------------->
     <div class="container__banner">
