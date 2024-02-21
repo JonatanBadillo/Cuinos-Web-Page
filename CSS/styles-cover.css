@@ -1,0 +1,42 @@
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(180deg, #2bd5347b 0%, #e4a00c75 100%),
+    url("../SRC/img/sliders-team/slider-11.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: .1px;
+    position: relative;
+}
+.hero_container-text{
+    text-align: center;
+    margin-top: 150px;
+}
+.hero_title{
+    font-size: 4rem;
+    color: #ffff;
+}
+.hero_copy{
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.hero_cta{
+    display: inline-block;
+    text-decoration: none;
+    background: #ffff;
+    color: #2bd534e4;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.hero_cta:hover{
+    background: #e4a00cc0;
+    color: #ffff;
+}
+.hero_wave{
+position: absolute;
+width: 100%;
+left: 0;
+bottom: 0;
+}

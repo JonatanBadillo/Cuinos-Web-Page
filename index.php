@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="CSS/styles-players.css" />
 		<link rel="stylesheet" href="CSS/styles-form.css" />
 		<link rel="stylesheet" href="CSS/styles-cards.css" />
+		<link rel="stylesheet" href="CSS/styles-cover.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
