@@ -58,6 +58,24 @@
 			</div>
 
     </header>
+
+	<!-------------------PORTADA------------------->
+	<div class="hero_container-text">
+            <h1 class="hero_title">
+                Aprendiendo CSS desde cero
+            </h1>
+            <p class="hero_copy">
+                Entiende las Bases de CSS y dominalo para Siempre!
+            </p>
+            <a href="#" class="hero_cta">Entra Ahora</a>
+        </div>
+        <div class="hero_wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.00,49.85 C233.86,170.76 275.62,-75.29 500.00,49.85 L504.17,156.98 L-2.59,159.92 Z"
+                    style="stroke: none; fill: #ffff;"></path>
+            </svg>
+	</div>
+
     <!-----------container banner---------------->
     <div class="container__banner">
 			<div class="banner">
