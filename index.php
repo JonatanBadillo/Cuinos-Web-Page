@@ -98,7 +98,7 @@
 		</div>
 
     <!-- CARDS -->
-    <div class="container__cards" id="players">
+    <div class="container__cards1" id="players">
         <?php
         // Aquí inicia código para generar tarjetas de los jugadores
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
