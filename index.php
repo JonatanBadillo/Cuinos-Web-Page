@@ -41,7 +41,7 @@
 
 			<div class="container__header">
 				<div class="logo">
-					<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>
+					<a href="#"><img src="SRC/img/sliders-team/slider-17.jpg" alt="Logo" /></a>
 				</div>
 
 				<div class="menu">
