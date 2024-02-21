@@ -41,7 +41,7 @@
 
 			<div class="container__header">
 				<div class="logo">
-					<a href="#"><img src="SRC/img/sliders-team/slider-17.jpg" alt="Logo" /></a>
+					<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>
 				</div>
 
 				<div class="menu">
@@ -63,7 +63,7 @@
 	<!-------------------PORTADA------------------->
 	<section class="home section" id="home">
 		<div class="home__container container grid">
-			<img src="SRC/img/player_banner.png" alt="" class="home__img">
+			<img src="SRC/img/sliders-team/slider-15.jpg" alt="" class="home__img">
 			<div class="home__data">
 				<h1 class="home__title">CUINOS FC</h1>
 				<p class="home__description">
