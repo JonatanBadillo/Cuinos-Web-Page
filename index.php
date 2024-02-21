@@ -318,7 +318,9 @@
 					<input type="checkbox" id="portero" name="posicion" value="portero" class="contact-checkbox">
 					
 					<div class="container-positions">
-						<p>Portero</p><label type="checkbox" checked="checked"></label>
+						<div class="row">
+							<p>Portero</p><label type="checkbox" checked="checked"></label>
+						</div>
 					</div>
 					
 
