@@ -39,6 +39,11 @@
   font-weight: 500;
 }
 
+.container-positions{
+  border: 2px solid #bd43cb;
+  
+}
+
 .contact-left textarea{
   height: 140px;
   padding-top: 15px;

@@ -303,6 +303,7 @@
 				<li></li>
 			</ul>
 		</div>
+		<br>
 
 		<!------------------FORM----------------------->
 		<div class="contact-container">
@@ -315,13 +316,11 @@
 					<input type="text" placeholder="Apellido" class="contact-inputs" name="apellido" required/>
 					<input type="email" placeholder="Correo" class="contact-inputs" name="correo" required/>
 					<input type="checkbox" id="portero" name="posicion" value="portero" class="contact-checkbox">
-					<label for="portero" class="contact-checkbox-label">Portero</label>
-					<input type="checkbox" id="defensa" name="posicion" value="defensa" class="contact-checkbox">
-					<label for="defensa" class="contact-checkbox-label">Defensa</label>
-					<input type="checkbox" id="medio" name="posicion" value="medio" class="contact-checkbox">
-					<label for="medio" class="contact-checkbox-label">Medio</label>
-					<input type="checkbox" id="delantero" name="posicion" value="delantero" class="contact-checkbox">
-					<label for="delantero" class="contact-checkbox-label">Delantero</label>
+					
+					<div class="container-positions">
+						<p>Portero</p><label type="checkbox" checked="checked"></label>
+					</div>
+					
 
 					<textarea name="mensaje" placeholder="Mensaje" class="contact-inputs" ></textarea>
 					<button type="submit">Enviar<img src="SRC/img/arrow_icon.png" alt=""></button>
