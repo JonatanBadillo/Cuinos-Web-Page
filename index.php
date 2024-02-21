@@ -314,13 +314,19 @@
 					<input type="text" placeholder="Nombre" class="contact-inputs" name="nombre" required/>
 					<input type="text" placeholder="Apellido" class="contact-inputs" name="apellido" required/>
 					<input type="email" placeholder="Correo" class="contact-inputs" name="correo" required/>
+					<select name="posicion" class="contact-inputs" multiple>
+						<option value="portero">Portero</option>
+						<option value="defensa">Defensa</option>
+						<option value="medio">Medio</option>
+						<option value="delantero">Delantero</option>
+					</select>
 					<textarea name="mensaje" placeholder="Mensaje" class="contact-inputs" ></textarea>
 					<button type="submit">Enviar<img src="SRC/img/arrow_icon.png" alt=""></button>
 				</form>
 				<div class="contact-right">
 					<img src="SRC/img/right-image.png" alt="">
 				</div>
-			</div> 
+		</div> 
 
         <br>
 
