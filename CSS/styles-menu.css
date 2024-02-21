@@ -64,9 +64,9 @@ header {
   
   
   
-  #icon_menu {
+ /* #icon_menu {
     display: none;
-  }
+  } */
 
   @media (max-width: 1024px) {
     .container__header{
@@ -103,5 +103,82 @@ header {
     .menu nav ul li {
       padding: 10px 40px;
     }
+    .mostrar_menu {
+      /*CLASE MANIPULADA POR JS*/
+      height: 235px;
+    }
+  
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  width: 150px;
+  top: 30%;
+}
+
+.dropdown-name {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  transition: opacity 300ms;
+}
+.menu span:hover {
+  opacity: 0.6;
+}
+
+.dropdown-active #dropdown-btn {
+  border-radius: 25px 25px 10px 10px;
+}
+
+.dropdown-active .dropdown-menu-box {
+  visibility: visible;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+.dropdown-menu-box {
+  position: absolute;
+  left: 0;
+  margin-top: 75px;
+  border-radius: 10px 10px 25px 25px;
+  background-color: #000000;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.862);
+  visibility: hidden;
+  transition: 0.3s ease;
+  opacity: 0;
+  width: auto;
+  /* Ajustar el ancho automáticamente */
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 25px;
+  list-style: none;
+}
+
+.dropdown-item {
+  position: relative;
+  font-size: 14px;
+  /* Aumentar el tamaño de fuente para una mejor legibilidad */
+  letter-spacing: 0;
+  text-align: left;
+  color: #69f1a1;
+  background-color: none;
+  border-radius: 8px 8px 13px 13px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  transition: 0.3s ease;
+
+  /* Mostrar elementos en lista vertical */
+}
+
+.dropdown-item:hover {
+  letter-spacing: 1.5px;
+
+  background: #69f1a1;
+  color: #000;
 }
 
