@@ -29,36 +29,7 @@
 	</head>
 
 <body>
-    <header>
-        <!-- FALTA MENU-->
-        <!--
-            Añadí un h1 en el container del banner, por cuestiones de calidad
-            y SEO, pero si creas una barra de navegación, lo quitas de ahí y lo pones aquí -idealmente-.
-        -->
-        <!--TODO: NAV BAR -->
-
-        <!--TODO: Checar parte responsiva del menu-->
-
-			<div class="container__header">
-				<div class="logo">
-					<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>
-				</div>
-
-				<div class="menu">
-					<nav>
-						<ul>
-							<li><a href="#">Conócenos</a></li>
-							<li><a href="#players">Jugadores</a></li>
-							<li><a href="#table">Goleadores</a></li>
-							<li><a href="#gallery">Galeria</a></li>
-							<li><a href="#contact-info">Contacto</a></li>
-						</ul>
-					</nav>
-				</div>
-				<i class="fa-solid fa-bars" id="icon_menu"></i>
-			</div>
-
-    </header>
+   
 
 	<!-------------------PORTADA------------------->
 	
