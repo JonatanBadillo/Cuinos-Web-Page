@@ -6,7 +6,7 @@
 		<title>Cuinos FC</title>
 		<link rel="icon" href="SRC/img/logo.png" type="image/png" />
 		<link rel="stylesheet" href="CSS/normalize.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+		
 		<link rel="stylesheet" href="CSS/styles-menu.css" />
 		<link rel="stylesheet" href="CSS/styles-gallery.css" />
 		<link rel="stylesheet" href="CSS/styles-banner.css" />
@@ -98,7 +98,7 @@
 		</div>
 
     <!-- CARDS -->
-    <div class="container__cards1" id="players">
+    <div class="container__cards" id="players">
         <?php
         // Aquí inicia código para generar tarjetas de los jugadores
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
