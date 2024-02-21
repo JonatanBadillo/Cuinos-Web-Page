@@ -326,7 +326,7 @@
 		<br>
 
 		<!------------------FORM----------------------->
-		<div class="contact-container">
+		<div class="contact-container" id="contact-info">
 				<form action="" class="contact-left">
 					<div class="contact-left-title">
 						<h2>Unete a Cuinos</h2>
