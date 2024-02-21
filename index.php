@@ -6,6 +6,7 @@
 		<title>Cuinos FC</title>
 		<link rel="icon" href="SRC/img/logo.png" type="image/png" />
 		<link rel="stylesheet" href="CSS/normalize.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
 		<link rel="stylesheet" href="CSS/styles-menu.css" />
 		<link rel="stylesheet" href="CSS/styles-gallery.css" />
 		<link rel="stylesheet" href="CSS/styles-banner.css" />
