@@ -372,6 +372,7 @@
     <script src="/SRC/js/banner.js"></script>
     <script src="/SRC/js/sliders.js"></script>
     <script src="/SRC/js/main.js"></script>
+	<script src="/SRC/js/script-home.js"></script>
 
 </body>
 
