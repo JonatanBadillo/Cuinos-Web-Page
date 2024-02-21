@@ -38,45 +38,39 @@
         <!--TODO: NAV BAR -->
 
         <!--TODO: Checar parte responsiva del menu-->
+		<div class="container__header">
 
+			<div class="logo">
+				<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>		
+			</div>
 
-
-
-
-
-
-
-<div class="container__header">
-
-<div class="logo">
-	<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>		
-</div>
-
-<div class="menu">
-	<nav>
-		<ul>
-			<li class="dropdown">
-				<a>
-					<div id="dropdown-btn1">
-						<a href="#"><span class="dropdown-name">Conocenos</span></a>
-					</div>
-				</a>
-			</li>
-			<li class="dropdown">
-				<a>
-					<div id="dropdown-btn2">
-						<!-- MOMENTANEMAENTE CON RUTA HACIA UNA TABLA EN ESPECIFICO--->
-						<a href="#players"><span class="dropdown-name">Jugadores</span></a>
-					</div>
-				</a>
-			</li>
-			<!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
-			<li><a href="#table">Goleadores</a></li>
-			<!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
-			<li><a href="#gallery">Galeria</a></li>
-			<li><a href="#contact-info">Contacto</a></li>
-		</ul>
-	</nav>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li class="dropdown">
+							<a>
+								<div id="dropdown-btn1">
+									<a href="#"><span class="dropdown-name">Conocenos</span></a>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a>
+								<div id="dropdown-btn2">
+									<!-- MOMENTANEMAENTE CON RUTA HACIA UNA TABLA EN ESPECIFICO--->
+									<a href="#players"><span class="dropdown-name">Jugadores</span></a>
+								</div>
+							</a>
+						</li>
+						<!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
+						<li><a href="#table">Goleadores</a></li>
+						<!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
+						<li><a href="#gallery">Galeria</a></li>
+						<li><a href="#contact-info">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
     </header>
 
@@ -386,13 +380,14 @@
             <p>Todos los derechos reservados © 2024 <b>Cuinos FC</b></p>
         </div>
     </footer>
+	<script src="SRC/js/script-home.js"></script>
     <script src="/SRC/js/main.js"></script>
     <script src="/SRC/js/table.js"></script>
     <script src="/SRC/js/form.js"></script>
     <script src="/SRC/js/banner.js"></script>
     <script src="/SRC/js/sliders.js"></script>
     <script src="/SRC/js/main.js"></script>
-	<script src="/SRC/js/script-home.js"></script>
+	
 
 </body>
 
