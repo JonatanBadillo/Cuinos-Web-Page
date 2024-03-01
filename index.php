@@ -122,7 +122,7 @@
                            </div>
                        </div>';
         $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
-        $players = fetch_fields("players", $fields, null, null);
+        $players = fetch_fields("players", $fields, null, "SELECT * FROM `cuinos_fc` ORDER BY `positions_player`");
 
         $fields = ["id_position", "name_position"];
         $positions_fetch = fetch_fields("positions", $fields, null, null);
