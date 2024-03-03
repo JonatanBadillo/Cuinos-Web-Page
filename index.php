@@ -183,8 +183,11 @@
 		<h1>Goleadores</h1>
 
 		<ul>
-            <li id="historicos">Historicos</li>
-            <li id="option2">Opción 2</li>
+            <li><a href="historicos">Históricos</a></li>
+            <li><a href="1torneo" >1er Torneo</a></li>
+			<li><a href="2torneo" >2do Torneo</a></li>
+			<li><a href="3torneo" >3er Torneo</a></li>
+			<li><a href="4torneo" >4to Torneo</a></li>
         </ul>
 
 
