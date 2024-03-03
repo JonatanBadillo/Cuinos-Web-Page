@@ -89,7 +89,7 @@
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
 
         // Puedes modificar el HTML de esta variable para generar cambios estructurales
-        $dynamicDOM = '<div class="card positionFLAG" id="playerFLAG">
+        $dynamicDOM = '<div class="card" id="playerFLAG">
                            <div class="cover">
                                <img src="/SRC/img/playerFLAG.png" alt="">
                                <div class="img__back"></div>
