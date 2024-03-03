@@ -222,7 +222,11 @@
                         $dynamicDOM = ('<tr>
         <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
         <td> FLAG </td>
+        <td> FLAG </td>
         <td> POSITION </td>
+        <td>
+            <p class="status STATUS</p>
+        </td>
     </tr>');
                         $indexes = [0, 1, 2, 3, 7, 6];
                         for ($i = 0; $i < sizeof($players); $i++) {
