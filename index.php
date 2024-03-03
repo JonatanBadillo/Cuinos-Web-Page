@@ -150,7 +150,13 @@
 			$playerDOM = str_replace("GOLES", $players[$i][6] , $playerDOM);
 			$playerDOM = str_replace("TITULOS",$players[$i][8] , $playerDOM);
 			$playerDOM = str_replace("TORNEOS",$players[$i][7] , $playerDOM);
-			$playerDOM = str_replace("ESTATUS",$players[$i][9] , $playerDOM);
+
+			if($players[$i][9] == 1){
+				$playerDOM = str_replace("ESTATUS","Activo" , $playerDOM);
+			}else{
+				$playerDOM = str_replace("ESTATUS","Inactivo" , $playerDOM);
+			}
+			
 
 
             echo ($playerDOM);
