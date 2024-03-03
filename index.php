@@ -280,12 +280,8 @@
         <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
         <td> FLAG </td>
         <td> FLAG </td>
-        <td> POSITION </td>
-        <td>
-            <p class="status STATUS</p>
-        </td>
     </tr>');
-                        $indexes = [0, 1, 2, 3, 7, 6];
+                        $indexes = [0, 1, 2, 3, 10];
                         for ($i = 0; $i < sizeof($players); $i++) {
                             $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
                             $playerPositions = splitter($players[$i][5], ",");
