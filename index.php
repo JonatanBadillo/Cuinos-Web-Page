@@ -116,6 +116,7 @@
 										<b>Torneos:</b> TORNEOS<br> 
 										<b>Goles:</b> GOLES <br>
 										<b>Títulos:</b> TITULOS
+										<b>Estatus:</b> ESTATUS
 									   </p>
                                     </div>
                                </div>
@@ -149,6 +150,7 @@
 			$playerDOM = str_replace("GOLES", $players[$i][6] , $playerDOM);
 			$playerDOM = str_replace("TITULOS",$players[$i][8] , $playerDOM);
 			$playerDOM = str_replace("TORNEOS",$players[$i][7] , $playerDOM);
+			$playerDOM = str_replace("ESTATUS",$players[$i][9] , $playerDOM);
 
 
             echo ($playerDOM);
