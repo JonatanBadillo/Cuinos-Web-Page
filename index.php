@@ -139,6 +139,14 @@
             // print_r($playerPositions);
             $text_positions = "";
             $k = 0;
+
+			// Determinar la posición del jugador y asignar una clase correspondiente
+			$positionClass = 'position-' . $players[$i][5]; // Suponiendo que el índice 5 contiene la posición del jugador
+    
+			// Reemplazar 'positionClass' en el HTML de la tarjeta
+			$playerDOM = str_replace("positionFLAG", $positionClass, $playerDOM);
+		
+
             foreach ($playerPositions as $positionIndex) {
                 ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
                 $k++;
