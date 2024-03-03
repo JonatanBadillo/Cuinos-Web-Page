@@ -283,22 +283,20 @@
     </tr>');
                         $indexes = [0, 1, 2, 3, 10];
                         for ($i = 0; $i < sizeof($players); $i++) {
-                            $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
-                            $playerPositions = splitter($players[$i][5], ",");
-                            // print_r($playerPositions);
-                            $text_positions = "";
-                            $k = 0;
-                            foreach ($playerPositions as $positionIndex) {
-                                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
-                                $k++;
-                            }
-                            $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
-                            $playerDOM = str_replace("ORDER", ($i + 1), $playerDOM);
-                            (intval($players[$i][9]) === 1) ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
-
-                            echo ($playerDOM);
-                        }
-                        ?>
+							$playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+						
+							// Obtener los goles del primer torneo
+							$goals_1 = $players[$i][10];
+						
+							// Construir la fila de la tabla
+							$playerRow = '<td>' . $players[$i][1] . ' ' . $players[$i][2] . '</td>'; // Nombre del jugador
+							$playerRow .= '<td>' . $goals_1 . '</td>'; // Goles del primer torneo
+						
+							// Reemplazar FLAG por los datos del jugador en la plantilla HTML
+							$playerDOM = str_replace("FLAG", $playerRow, $playerDOM);
+						
+							echo $playerDOM;
+						}?>
                     </tbody>
                 </table>
             </section>
