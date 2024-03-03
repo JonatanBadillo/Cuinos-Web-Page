@@ -250,6 +250,66 @@
                 </table>
             </section>
         </main>
+
+
+		<main class="table" id="1torneo">
+            <section class="table__header" id="table">
+                <h1>Goleadores Historicos</h1>
+				
+				
+
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="SRC/img/search.png" alt="">
+                </div>
+
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Torneos <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Goles <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Posición(es) <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Estatus <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
+                        $players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_player` DESC");
+                        $dynamicDOM = ('<tr>
+        <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
+        <td> FLAG </td>
+        <td> FLAG </td>
+        <td> POSITION </td>
+        <td>
+            <p class="status STATUS</p>
+        </td>
+    </tr>');
+                        $indexes = [0, 1, 2, 3, 7, 6];
+                        for ($i = 0; $i < sizeof($players); $i++) {
+                            $playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+                            $playerPositions = splitter($players[$i][5], ",");
+                            // print_r($playerPositions);
+                            $text_positions = "";
+                            $k = 0;
+                            foreach ($playerPositions as $positionIndex) {
+                                ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
+                                $k++;
+                            }
+                            $playerDOM = str_replace("POSITION", $text_positions, $playerDOM);
+                            $playerDOM = str_replace("ORDER", ($i + 1), $playerDOM);
+                            (intval($players[$i][9]) === 1) ? $playerDOM = str_replace("STATUS", 'active">Activo', $playerDOM) : $playerDOM = str_replace("STATUS", 'inactive">Inactivo', $playerDOM);
+
+                            echo ($playerDOM);
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </center>
 
     <br>
