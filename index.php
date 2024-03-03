@@ -89,40 +89,39 @@
         include_once "php scripts/functions.php"; // Incluyo archivo donde guardo funciones de PHP
 
         // Puedes modificar el HTML de esta variable para generar cambios estructurales
-        $dynamicDOM = '<div class="card positionFLAG" id="playerFLAG">
-		<div class="cover">
-			<img src="/SRC/img/playerFLAG.png" alt="">
-			<div class="img__back"></div>
-		</div>
-		<div class="description">
-			<h2>FLAG FLAG FLAG</h2>
-			<p><b>POSITION</b><br>
-				<b>Torneos:</b> FLAG <br> 
-				<b>Goles:</b> FLAG <br>
-				<b>Títulos:</b> FLAG
-			</p>
-			<input type="button" value="Leer más" class="open-button">
-			<div class="window-background">
-				<div class="window-container">
-					<button class="close-button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
-							<path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-						</svg>
-					</button>
-					<h1>NOMBRE APELLIDO</h1>
-					<b>POSITION</b>
-					<p style="text-align: justify;">TEXTO</p>
-					<p>
-						<b>Torneos:</b> TORNEOS<br> 
-						<b>Goles:</b> GOLES <br>
-						<b>Títulos:</b> TITULOS <br>
-						<b>Estatus:</b> ESTATUS
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>';
-
+        $dynamicDOM = '<div class="card" id="playerFLAG">
+                           <div class="cover">
+                               <img src="/SRC/img/playerFLAG.png" alt="">
+                               <div class="img__back"></div>
+                           </div>
+                           <div class="description">
+                               <h2>FLAG FLAG FLAG</h2>
+                               <p><b>POSITION</b><br>
+                               <b>Torneos:</b> FLAG <br> 
+                               <b>Goles:</b> FLAG <br>
+                               <b>Títulos:</b> FLAG
+                               </p>
+                               <input type="button" value="Leer más" class="open-button">
+                               <div class="window-background">
+                                   <div class="window-container">
+                                       <button class="close-button">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
+                                               <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+                                           </svg>
+                                       </button>
+									   <h1>NOMBRE APELLIDO</h1>
+									   <b>POSITION</b>
+                                       <p style="text-align: justify;">TEXTO</p>
+									   <p>
+										<b>Torneos:</b> TORNEOS<br> 
+										<b>Goles:</b> GOLES <br>
+										<b>Títulos:</b> TITULOS <br>
+										<b>Estatus:</b> ESTATUS
+									   </p>
+                                    </div>
+                               </div>
+                           </div>
+                       </div>';
         $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player"];
         $players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `positions_player`");
 
