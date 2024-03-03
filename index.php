@@ -180,9 +180,21 @@
     <!----------- TABLE --------------------->
 
     <center>
-        <main class="table" id="customers_table">
+		<h1>Goleadores</h1>
+
+		<ul>
+            <li id="historicos">Historicos</li>
+            <li id="option2">Opción 2</li>
+        </ul>
+
+
+
+        <main class="table" id="historicos">
             <section class="table__header" id="table">
                 <h1>Goleadores Historicos</h1>
+				
+				
+
                 <div class="input-group">
                     <input type="search" placeholder="Search Data...">
                     <img src="SRC/img/search.png" alt="">
