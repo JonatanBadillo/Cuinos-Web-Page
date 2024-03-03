@@ -274,29 +274,28 @@
                     </thead>
                     <tbody>
                         <?php
-                        $fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player","goals_1","goals_2","goals_3","goals_4"];
-                        $players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_player` DESC");
+                        
                         $dynamicDOM = ('<tr>
-        <td><a href="#playerFLAG"> FLAG FLAG FLAG </a></td>
-        <td> FLAG </td>
-        <td> FLAG </td>
+        <td><a href="#playerFLAG"> NOMBRE APELLIDO</a></td>
+        <td>GOLES </td>
     </tr>');
-                        $indexes = [0, 1, 2, 3, 10];
-                        for ($i = 0; $i < sizeof($players); $i++) {
-							$playerDOM = flag_replacer($dynamicDOM, "FLAG", $players[$i], $indexes);
+						$fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player","goals_1","goals_2","goals_3","goals_4"];
+						$players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_player` DESC");
 						
+						for ($i = 0; $i < sizeof($players); $i++) {
+							// Obtener los nombres del jugador
+							$playerName = $players[$i][1] . ' ' . $players[$i][2];
+							
 							// Obtener los goles del primer torneo
 							$goals_1 = $players[$i][10];
-						
+							
 							// Construir la fila de la tabla
-							$playerRow = '<td>' . $players[$i][1] . ' ' . $players[$i][2] . '</td>'; // Nombre del jugador
-							$playerRow .= '<td>' . $goals_1 . '</td>'; // Goles del primer torneo
-						
-							// Reemplazar FLAG por los datos del jugador en la plantilla HTML
-							$playerDOM = str_replace("FLAG", $playerRow, $playerDOM);
-						
-							echo $playerDOM;
-						}?>
+							echo '<tr>';
+							echo '<td><a href="#player' . $players[$i][0] . '">' . $playerName . '</a></td>'; // Nombre del jugador
+							echo '<td>' . $goals_1 . '</td>'; // Goles del primer torneo
+							echo '</tr>';
+						}
+						?>
                     </tbody>
                 </table>
             </section>
