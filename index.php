@@ -115,7 +115,7 @@
 									   <p>
 										<b>Torneos:</b> TORNEOS<br> 
 										<b>Goles:</b> GOLES <br>
-										<b>Títulos:</b> TITULOS
+										<b>Títulos:</b> TITULOS <br>
 										<b>Estatus:</b> ESTATUS
 									   </p>
                                     </div>
