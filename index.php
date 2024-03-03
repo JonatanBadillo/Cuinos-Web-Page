@@ -254,7 +254,7 @@
 
 		<main class="table" id="1torneo">
             <section class="table__header" id="table">
-                <h1>Goleadores Historicos</h1>
+                <h1>Goleadores 1er Torneo</h1>
 				
 				
 
@@ -269,10 +269,7 @@
                     <thead>
                         <tr>
                             <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
-                            <th> Torneos <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Goles <span class="icon-arrow">&UpArrow;</span></th>
-                            <th> Posición(es) <span class="icon-arrow">&UpArrow;</span></th>
-                            <th> Estatus <span class="icon-arrow">&UpArrow;</span></th>
                         </tr>
                     </thead>
                     <tbody>
