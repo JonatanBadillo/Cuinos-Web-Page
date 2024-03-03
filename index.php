@@ -145,6 +145,9 @@
     
 			// Reemplazar 'positionClass' en el HTML de la tarjeta
 			$playerDOM = str_replace("positionFLAG", $positionClass, $playerDOM);
+			// Reemplazar 'positionFLAG' en el HTML de la tarjeta
+			$playerDOM = str_replace("card", "card " . $positionClass, $playerDOM);
+
 		
 
             foreach ($playerPositions as $positionIndex) {
