@@ -280,7 +280,7 @@
         <td>GOLES </td>
     </tr>');
 						$fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player","goals_1","goals_2","goals_3","goals_4"];
-						$players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_player` DESC");
+						$players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_1` DESC");
 						
 						for ($i = 0; $i < sizeof($players); $i++) {
 							// Obtener los nombres del jugador
