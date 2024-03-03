@@ -1,60 +1,66 @@
+// Función para buscar en la tabla específica
+function searchTable(tableId) {
+    const search = document.querySelector(`#${tableId} .input-group input`);
+    const tableRows = document.querySelectorAll(`#${tableId} tbody tr`);
+    
+    search.addEventListener('input', () => {
+        tableRows.forEach((row, i) => {
+            let tableData = row.textContent.toLowerCase();
+            let searchData = search.value.toLowerCase();
+            row.classList.toggle('hide', tableData.indexOf(searchData) < 0);
+            row.style.setProperty('--delay', i / 25 + 's');
+        });
 
-//////////////////////////////////////  table  //////////////////////////////////////
-
-const search = document.querySelector('.input-group input'),
-    table_rows = document.querySelectorAll('tbody tr'),
-    table_headings = document.querySelectorAll('thead th');
-
-// 1. Searching for specific data of HTML table
-search.addEventListener('input', searchTable);
-
-function searchTable() {
-    table_rows.forEach((row, i) => {
-        let table_data = row.textContent.toLowerCase(),
-            search_data = search.value.toLowerCase();
-
-        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-        row.style.setProperty('--delay', i / 25 + 's');
-    })
-
-    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
-        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+        document.querySelectorAll(`#${tableId} tbody tr:not(.hide)`).forEach((visibleRow, i) => {
+            visibleRow.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+        });
     });
 }
 
-// 2. Sorting | Ordering data of HTML table
+// Función para ordenar la tabla específica
+function sortTable(tableId) {
+    const tableHeadings = document.querySelectorAll(`#${tableId} thead th`);
 
-table_headings.forEach((head, i) => {
-    let sort_asc = true;
-    head.onclick = () => {
-        table_headings.forEach(head => head.classList.remove('active'));
-        head.classList.add('active');
+    tableHeadings.forEach((head, i) => {
+        let sortAsc = true;
+        head.onclick = () => {
+            tableHeadings.forEach(head => head.classList.remove('active'));
+            head.classList.add('active');
 
-        document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
-        table_rows.forEach(row => {
-            row.querySelectorAll('td')[i].classList.add('active');
-        })
+            document.querySelectorAll(`#${tableId} td`).forEach(td => td.classList.remove('active'));
+            document.querySelectorAll(`#${tableId} tbody tr`).forEach(row => {
+                row.querySelectorAll('td')[i].classList.add('active');
+            });
 
-        head.classList.toggle('asc', sort_asc);
-        sort_asc = head.classList.contains('asc') ? false : true;
+            head.classList.toggle('asc', sortAsc);
+            sortAsc = head.classList.contains('asc') ? false : true;
 
-        sortTable(i, sort_asc);
-    }
-})
+            sortTableHelper(tableId, i, sortAsc);
+        };
+    });
+}
 
-
-function sortTable(column, sort_asc) {
-    [...table_rows].sort((a, b) => {
-        let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
-            second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
+// Función auxiliar para ordenar la tabla específica
+function sortTableHelper(tableId, column, sortAsc) {
+    const tableRows = document.querySelectorAll(`#${tableId} tbody tr`);
+    
+    [...tableRows].sort((a, b) => {
+        let firstRow = a.querySelectorAll('td')[column].textContent.toLowerCase();
+        let secondRow = b.querySelectorAll('td')[column].textContent.toLowerCase();
 
         // Convertir los valores de texto a números para ordenar correctamente
-        if (!isNaN(parseFloat(first_row))) {
-            first_row = parseFloat(first_row);
-            second_row = parseFloat(second_row);
+        if (!isNaN(parseFloat(firstRow))) {
+            firstRow = parseFloat(firstRow);
+            secondRow = parseFloat(secondRow);
         }
 
-        return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
+        return sortAsc ? (firstRow < secondRow ? 1 : -1) : (firstRow < secondRow ? -1 : 1);
     })
-        .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
+    .map(sortedRow => document.querySelector(`#${tableId} tbody`).appendChild(sortedRow));
 }
+
+// Llamar a las funciones para cada tabla específica
+searchTable("historicos");
+sortTable("historicos");
+searchTable("1torneo");
+sortTable("1torneo");
