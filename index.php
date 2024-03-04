@@ -27,6 +27,8 @@
 			src="https://kit.fontawesome.com/41bcea2ae3.js"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 	</head>
 
 <body>
@@ -39,25 +41,25 @@
         <!--TODO: NAV BAR -->
 
         <!--TODO: Checar parte responsiva del menu-->
-		<div class="container__header1">
+		<div class="container__header">
+				<div class="logo">
+					<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>
+				</div>
 
-			<div class="logo">
-				<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>		
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="#">Conócenos</a></li>
+							<li><a href="#players">Jugadores</a></li>
+							<li><a href="#table">Goleadores</a></li>
+							<li><a href="#gallery">Galeria</a></li>
+							<li><a href="#contact-info">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+				<i class="fa-solid fa-bars" id="icon_menu"></i>
 			</div>
-
-			<div class="menu1">
-				<nav>
-					<ul>
-						<<li><a href="#table">Conocenos</a></li>
-						<li><a href="#players">Jugadores</a></li>
-						<li><a href="#table">Goleadores</a></li>
-						<li><a href="#gallery">Galeria</a></li>
-						<li><a href="#contact-info">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-
+		
     </header>
 
 	<!-------------------PORTADA------------------->
