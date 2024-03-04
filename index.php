@@ -23,10 +23,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		/>
-		<script
-			src="https://kit.fontawesome.com/41bcea2ae3.js"
-			crossorigin="anonymous"
-		></script>
 
 		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 	</head>
