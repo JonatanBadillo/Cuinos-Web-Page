@@ -457,6 +457,15 @@
     <script src="/SRC/js/banner.js"></script>
     <script src="/SRC/js/sliders.js"></script>
     <script src="/SRC/js/main.js"></script>
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Llamar a las funciones para cada tabla específica
+            searchTable("historicos");
+            sortTable("historicos");
+            searchTable("1torneo");
+            sortTable("1torneo");
+        });
+    </script>
 	
 
 </body>
