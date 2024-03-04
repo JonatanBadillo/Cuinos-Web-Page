@@ -29,6 +29,7 @@ function searchTable(tableId) {
 
 // Función para ordenar la tabla específica
 function sortTable(tableId) {
+    console.log("sortTable function called for table with ID:", tableId);
     const tableHeadings = document.querySelectorAll(`#${tableId} thead th`);
 
     tableHeadings.forEach((head, i) => {
