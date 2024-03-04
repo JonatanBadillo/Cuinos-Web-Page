@@ -193,7 +193,7 @@
 
 
         <main class="table" id="historicos">
-            <section class="table__header" id="table">
+            <section class="table__header" id="historicos_header">
                 <h1>Goleadores Historicos</h1>
 				
 				
@@ -204,7 +204,7 @@
                 </div>
 
             </section>
-            <section class="table__body">
+            <section class="table__body" id="historicos_body">
                 <table>
                     <thead>
                         <tr>
@@ -253,7 +253,7 @@
 
 
 		<main class="table" id="1torneo">
-            <section class="table__header" id="table">
+            <section class="table__header" id="1torneo_header">
                 <h1>Goleadores 1er Torneo</h1>
 				
 				
@@ -264,7 +264,7 @@
                 </div>
 
             </section>
-            <section class="table__body">
+            <section class="table__body" id="1torneo_body">
                 <table>
                     <thead>
                         <tr>
@@ -457,15 +457,7 @@
     <script src="/SRC/js/banner.js"></script>
     <script src="/SRC/js/sliders.js"></script>
     <script src="/SRC/js/main.js"></script>
-	<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Llamar a las funciones para cada tabla específica
-            searchTable("historicos");
-            sortTable("historicos");
-            searchTable("1torneo");
-            sortTable("1torneo");
-        });
-    </script>
+	
 	
 
 </body>
