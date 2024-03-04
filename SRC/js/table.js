@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
     // Llamar a las funciones para cada tabla específica
     searchTable("historicos");
     sortTable("historicos");
     searchTable("1torneo");
     sortTable("1torneo");
-});
+};
 
 
 
