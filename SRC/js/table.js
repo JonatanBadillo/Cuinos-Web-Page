@@ -1,10 +1,3 @@
-
-//////////////////////////////////////  table  //////////////////////////////////////
-
-const search = document.querySelector('.input-group input'),
-    table_rows = document.querySelectorAll('tbody tr'),
-    table_headings = document.querySelectorAll('thead th');
-
 // Función para buscar en la tabla específica
 function searchTable(tableId) {
     const search = document.querySelector(`#${tableId} .input-group input`);
