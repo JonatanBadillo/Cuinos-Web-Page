@@ -180,31 +180,16 @@
     <!----------- TABLE --------------------->
 
     <center>
-		<h1>Goleadores</h1>
-
-		<ul>
-            <li><a href="#historicos">Históricos</a></li>
-            <li><a href="#1torneo" >1er Torneo</a></li>
-			<li><a href="#2torneo" >2do Torneo</a></li>
-			<li><a href="#3torneo" >3er Torneo</a></li>
-			<li><a href="#4torneo" >4to Torneo</a></li>
-        </ul>
-
-
-
-        <main class="table" id="historicos">
-            <section class="table__header" id="historicos_header">
+        <main class="table" id="customers_table">
+            <section class="table__header" id="table">
                 <h1>Goleadores Historicos</h1>
-				
-				
-
                 <div class="input-group">
                     <input type="search" placeholder="Search Data...">
                     <img src="SRC/img/search.png" alt="">
                 </div>
 
             </section>
-            <section class="table__body" id="historicos_body">
+            <section class="table__body">
                 <table>
                     <thead>
                         <tr>
@@ -246,56 +231,6 @@
                             echo ($playerDOM);
                         }
                         ?>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-
-
-		<main class="table" id="1torneo">
-            <section class="table__header" id="1torneo_header">
-                <h1>Goleadores 1er Torneo</h1>
-				
-				
-
-                <div class="input-group">
-                    <input type="search" placeholder="Search Data...">
-                    <img src="SRC/img/search.png" alt="">
-                </div>
-
-            </section>
-            <section class="table__body" id="1torneo_body">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> Nombre <span class="icon-arrow">&UpArrow;</span></th>
-                            <th> Goles <span class="icon-arrow">&UpArrow;</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        
-                        $dynamicDOM = ('<tr>
-        <td><a href="#playerFLAG"> NOMBRE APELLIDO</a></td>
-        <td>GOLES </td>
-    </tr>');
-						$fields = ["id_player", "name_player", "last_names_player", "nickname_player", "description_player", "positions_player", "goals_player", "tournaments_player", "titles_player", "status_player","goals_1","goals_2","goals_3","goals_4"];
-						$players = fetch_fields("players", $fields, null, "SELECT * FROM `players` ORDER BY `goals_1` DESC");
-						
-						for ($i = 0; $i < sizeof($players); $i++) {
-							// Obtener los nombres del jugador
-							$playerName = $players[$i][1] . ' ' . $players[$i][2];
-							
-							// Obtener los goles del primer torneo
-							$goals_1 = $players[$i][10];
-							
-							// Construir la fila de la tabla
-							echo '<tr>';
-							echo '<td><a href="#player' . $players[$i][0] . '">' . $playerName . '</a></td>'; // Nombre del jugador
-							echo '<td>' . $goals_1 . '</td>'; // Goles del primer torneo
-							echo '</tr>';
-						}
-						?>
                     </tbody>
                 </table>
             </section>
