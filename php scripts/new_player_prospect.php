@@ -1,10 +1,18 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $positions = "";
-    (isset($_POST['Portero'])) ? $positions = "1" : $positions = "";
-    (isset($_POST['Defensa'])) ? ($positions = "") ? $positions .= "2" : false : $positions .= "";
-    (isset($_POST['Medio'])) ? ($positions = "") ? $positions .= "3" : false : $positions .= "";
-    (isset($_POST['Delantero'])) ? ($positions = "") ? $positions .= "4" : false : $positions .= "";
+    if (isset($_POST['Portero'])) {
+        ($positions == "") ? $positions .= $_POST['Portero'] : $positions .= (", ". $_POST['Portero']); 
+    }
+    if (isset($_POST['Defensa'])) {
+        ($positions == "") ? $positions .= $_POST['Defensa'] : $positions .= (", ". $_POST['Defensa']); 
+    }
+    if (isset($_POST['Medio'])) {
+        ($positions == "") ? $positions .= $_POST['Medio'] : $positions .= (", ". $_POST['Medio']); 
+    }
+    if (isset($_POST['Delantero'])) {
+        ($positions == "") ? $positions .= $_POST['Delantero'] : $positions .= (", ". $_POST['Delantero']); 
+    }
 
     if ($positions == "") { // Si no se registró ninguna posición
         //header("Location: ../index.html");
