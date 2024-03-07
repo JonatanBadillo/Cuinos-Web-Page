@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $positions = "";
+    echo ("Debug: " . $_POST['Medio']);
     if (isset($_POST['Portero'])) {
         ($positions == "") ? $positions .= $_POST['Portero'] : $positions .= (", " . $_POST['Portero']);
     }
