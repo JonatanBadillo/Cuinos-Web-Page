@@ -3,16 +3,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $positions = "";
     echo ("Debug: " . $_POST['Medio']);
     if (isset($_POST['Portero'])) {
-        ($positions == "") ? $positions .= $_POST['Portero'] : $positions .= (", " . $_POST['Portero']);
+        ($positions == "") ? $positions .= 'Portero' : $positions .= (", " . 'Portero');
     }
     if (isset($_POST['Defensa'])) {
-        ($positions == "") ? $positions .= $_POST['Defensa'] : $positions .= (", " . $_POST['Defensa']);
+        ($positions == "") ? $positions .= 'Defensa' : $positions .= (", " . 'Defensa');
     }
     if (isset($_POST['Medio'])) {
-        ($positions == "") ? $positions .= $_POST['Medio'] : $positions .= (", " . $_POST['Medio']);
+        ($positions == "") ? $positions .= 'Medio' : $positions .= (", " . 'Medio');
     }
     if (isset($_POST['Delantero'])) {
-        ($positions == "") ? $positions .= $_POST['Delantero'] : $positions .= (", " . $_POST['Delantero']);
+        ($positions == "") ? $positions .= 'Delantero' : $positions .= (", " . 'Delantero');
     }
 
     if ($positions == "") { // Si no se registró ninguna posición
