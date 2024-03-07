@@ -15,8 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($positions == "") { // Si no se registró ninguna posición
-        //header("Location: ../index.html");
-        echo ("No hay posiciones");
+        header("Location: ../index.html");
+        //echo ("No hay posiciones");
     } else {
         if (isset($_POST['email'])) {
             include_once "connection.php";
@@ -84,6 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
                 echo "Excepción lanzada: " . $e->getMessage();
             }
+            echo ('<script>window.location.href = "http://www.w3schools.com";</script>');
             //header("Location: ../index.php");
         } else {
             header("Location: ../index.php?error=failed-register");
