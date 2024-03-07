@@ -929,7 +929,7 @@
 		<br />
 		<!------------------FORM----------------------->
 		<div class="contact-container" style="padding-top: 110px !important;">
-				<form action="php scripts/new_player_prospect.php" class="contact-left" method="post">
+				<form id="registro-aspirante" action="php scripts/new_player_prospect.php" class="contact-left" method="post">
 					<div class="contact-left-title">
 						<h2>Unete a Cuinos</h2>
 						<hr>
@@ -990,8 +990,8 @@
 						</div>
 					</div>
 					<textarea name="message" placeholder="Mensaje" class="contact-inputs" ></textarea>
-					<!--<button type="submit">Enviar<img src="SRC/img/arrow_icon.png" alt=""></button>-->
-					<input type="submit" value="Enviar">
+					<button type="submit" onclick="javascript:document.getElementById('registro-aspirante').submit();">Enviar<img src="SRC/img/arrow_icon.png" alt=""></button>
+					
 				</form>
 				<div class="contact-right">
 					<img src="SRC/img/right-image.png" alt="">
