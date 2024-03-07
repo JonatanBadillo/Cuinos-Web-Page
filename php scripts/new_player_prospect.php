@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Error al enviar el correo electrónico: " . $mail->ErrorInfo;
                 echo "Excepción lanzada: " . $e->getMessage();
             }
-            header("Location: ../index.php");
+            //header("Location: ../index.php");
         } else {
             header("Location: ../index.php?error=failed-register");
         }
