@@ -11,10 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         if (isset($_POST['email'])) {
             include_once "connection.php";
-            $insert_data = [$_POST['name'], $_POST['last_names'], $_POST['email'], intval($_POST['age']), $_POST['mobile'], $_POST['positions']];
-            $sql = ("INSERT INTO `" . "prospects" . "` VALUES ('', ?, ?, ?, ?, ?)");
+            $insert_data = [$_POST['name'], $_POST['last_names'], $_POST['email'], $_POST['mobile'], intval($_POST['age']), $_POST['positions'], $_POST['message']];
+            $sql = ("INSERT INTO `" . "prospects" . "` VALUES ('', ?, ?, ?, ?, ?, ?, ?)");
             $stmt = $connection->prepare($sql);
-            $stmt->bind_param("sssiss", $insert_data[0], $insert_data[1], $insert_data[2], $insert_data[3], $insert_data[4], $insert_data[5]);
+            $stmt->bind_param("ssssiss", $insert_data[0], $insert_data[1], $insert_data[2], $insert_data[3], $insert_data[4], $insert_data[5], $insert_data[6]);
             $stmt->execute();
             // Get the last inserted id to use as a foreign key in other tables
             $registered_id = $connection->insert_id;
@@ -33,8 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li>Nombre completo:  " . $insert_data[0] . " " . $insert_data[1] . "</li>
                         <li>Edad: " . $insert_data[3] . " años</li>
                         <li>Correo electrónico: <a href='mailto:" . $insert_data[2] . "'>" . $insert_data[2] . "</a></li>
-                        <li>Número telefónico: <a href='https://wa.me/52" . $insert_data[4] . "'>" . $insert_data[4] . "</a></li>
+                        <li>Número telefónico: <a href='https://wa.me/52" . $insert_data[3] . "'>" . $insert_data[3] . "</a></li>
+                        <li>Edad: " . $insert_data[4] . "</li>
                         <li>Posición(es): " . $insert_data[5] . "</li>
+                        <li>Mensaje: " . $insert_data[6] . "</li>
                     </ul>
                     ");
             $mail->Body = $msg;
@@ -59,8 +61,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li>Nombre completo:  " . $insert_data[0] . " " . $insert_data[1] . "</li>
                         <li>Edad: " . $insert_data[3] . " años</li>
                         <li>Correo electrónico: <a href='mailto:" . $insert_data[2] . "'>" . $insert_data[2] . "</a></li>
-                        <li>Número telefónico: <a href='https://wa.me/52" . $insert_data[4] . "'>" . $insert_data[4] . "</a></li>
+                        <li>Número telefónico: <a href='https://wa.me/52" . $insert_data[3] . "'>" . $insert_data[3] . "</a></li>
+                        <li>Edad: " . $insert_data[4] . "</li>
                         <li>Posición(es): " . $insert_data[5] . "</li>
+                        <li>Mensaje: " . $insert_data[6] . "</li>
                     </ul>
                     ");
             $mail->Body = $msg;
