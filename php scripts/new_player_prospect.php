@@ -7,7 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     (isset($_POST['Delantero'])) ? ($positions = "") ? $positions .= "4" : false : $positions .= "";
 
     if ($positions == "") { // Si no se registró ninguna posición
-        header("Location: ../index.html");
+        //header("Location: ../index.html");
+        echo("No hay posiciones");
     } else {
         if (isset($_POST['email'])) {
             include_once "connection.php";
