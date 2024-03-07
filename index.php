@@ -23,10 +23,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		/>
-		<script
-			src="https://kit.fontawesome.com/41bcea2ae3.js"
-			crossorigin="anonymous"
-		></script>
+
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 	</head>
 
 <body>
@@ -39,25 +37,25 @@
         <!--TODO: NAV BAR -->
 
         <!--TODO: Checar parte responsiva del menu-->
-		<div class="container__header1">
+		<div class="container__header">
+				<div class="logo">
+					<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>
+				</div>
 
-			<div class="logo">
-				<a href="#"><img src="SRC/img/logo.png" alt="Logo" /></a>		
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="#">Conócenos</a></li>
+							<li><a href="#players">Jugadores</a></li>
+							<li><a href="#table">Goleadores</a></li>
+							<li><a href="#gallery">Galeria</a></li>
+							<li><a href="#contact-info">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+				<i class="fa-solid fa-bars" id="icon_menu"></i>
 			</div>
-
-			<div class="menu1">
-				<nav>
-					<ul>
-						<<li><a href="#table">Conocenos</a></li>
-						<li><a href="#players">Jugadores</a></li>
-						<li><a href="#table">Goleadores</a></li>
-						<li><a href="#gallery">Galeria</a></li>
-						<li><a href="#contact-info">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-
+		
     </header>
 
 	<!-------------------PORTADA------------------->
@@ -115,7 +113,8 @@
 									   <p>
 										<b>Torneos:</b> TORNEOS<br> 
 										<b>Goles:</b> GOLES <br>
-										<b>Títulos:</b> TITULOS
+										<b>Títulos:</b> TITULOS <br>
+										<b>Estatus:</b> ESTATUS
 									   </p>
                                     </div>
                                </div>
@@ -138,6 +137,17 @@
             // print_r($playerPositions);
             $text_positions = "";
             $k = 0;
+
+			// Determinar la posición del jugador y asignar una clase correspondiente
+			$positionClass = 'position-' . $players[$i][5]; // Suponiendo que el índice 5 contiene la posición del jugador
+    
+			// Reemplazar 'positionClass' en el HTML de la tarjeta
+			$playerDOM = str_replace("positionFLAG", $positionClass, $playerDOM);
+			// Reemplazar 'positionFLAG' en el HTML de la tarjeta
+			$playerDOM = str_replace("card", "card " . $positionClass, $playerDOM);
+
+		
+
             foreach ($playerPositions as $positionIndex) {
                 ($k == 0) ? $text_positions .= positions_proccesor($positionIndex, $positions) : $text_positions .= (" / " . positions_proccesor($positionIndex, $positions));
                 $k++;
@@ -149,6 +159,13 @@
 			$playerDOM = str_replace("GOLES", $players[$i][6] , $playerDOM);
 			$playerDOM = str_replace("TITULOS",$players[$i][8] , $playerDOM);
 			$playerDOM = str_replace("TORNEOS",$players[$i][7] , $playerDOM);
+
+			if($players[$i][9] == 1){
+				$playerDOM = str_replace("ESTATUS","Activo" , $playerDOM);
+			}else{
+				$playerDOM = str_replace("ESTATUS","Inactivo" , $playerDOM);
+			}
+			
 
 
             echo ($playerDOM);
@@ -373,6 +390,7 @@
     <script src="/SRC/js/banner.js"></script>
     <script src="/SRC/js/sliders.js"></script>
     <script src="/SRC/js/main.js"></script>
+	
 	
 
 </body>
