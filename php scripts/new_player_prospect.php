@@ -2,25 +2,25 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $positions = "";
     if (isset($_POST['Portero'])) {
-        ($positions == "") ? $positions .= $_POST['Portero'] : $positions .= (", ". $_POST['Portero']); 
+        ($positions == "") ? $positions .= $_POST['Portero'] : $positions .= (", " . $_POST['Portero']);
     }
     if (isset($_POST['Defensa'])) {
-        ($positions == "") ? $positions .= $_POST['Defensa'] : $positions .= (", ". $_POST['Defensa']); 
+        ($positions == "") ? $positions .= $_POST['Defensa'] : $positions .= (", " . $_POST['Defensa']);
     }
     if (isset($_POST['Medio'])) {
-        ($positions == "") ? $positions .= $_POST['Medio'] : $positions .= (", ". $_POST['Medio']); 
+        ($positions == "") ? $positions .= $_POST['Medio'] : $positions .= (", " . $_POST['Medio']);
     }
     if (isset($_POST['Delantero'])) {
-        ($positions == "") ? $positions .= $_POST['Delantero'] : $positions .= (", ". $_POST['Delantero']); 
+        ($positions == "") ? $positions .= $_POST['Delantero'] : $positions .= (", " . $_POST['Delantero']);
     }
 
     if ($positions == "") { // Si no se registró ninguna posición
         //header("Location: ../index.html");
-        echo("No hay posiciones");
+        echo ("No hay posiciones");
     } else {
         if (isset($_POST['email'])) {
             include_once "connection.php";
-            $insert_data = [$_POST['name'], $_POST['last_names'], $_POST['email'], $_POST['mobile'], intval($_POST['age']), $_POST['positions'], $_POST['message']];
+            $insert_data = [$_POST['name'], $_POST['last_names'], $_POST['email'], $_POST['mobile'], intval($_POST['age']), $positions, $_POST['message']];
             $sql = ("INSERT INTO `" . "prospects" . "` VALUES ('', ?, ?, ?, ?, ?, ?, ?)");
             $stmt = $connection->prepare($sql);
             $stmt->bind_param("ssssiss", $insert_data[0], $insert_data[1], $insert_data[2], $insert_data[3], $insert_data[4], $insert_data[5], $insert_data[6]);
