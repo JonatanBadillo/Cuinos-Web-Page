@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $positions = "";
     (isset($_POST['Portero'])) ? $positions = "1" : $positions = "";
     (isset($_POST['Defensa'])) ? ($positions = "") ? $positions .= "2" : false : $positions .= "";
     (isset($_POST['Medio'])) ? ($positions = "") ? $positions .= "3" : false : $positions .= "";
